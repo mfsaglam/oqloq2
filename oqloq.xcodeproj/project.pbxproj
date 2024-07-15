@@ -149,12 +149,8 @@
 		E6C490222C45E7A000B545B9 /* Oqloq Module */ = {
 			isa = PBXGroup;
 			children = (
-				E6C490232C45E7D000B545B9 /* OqloqView.swift */,
-				E6C490252C45E8A300B545B9 /* OqloqViewViewModel.swift */,
-				E6C490272C45E8D300B545B9 /* ClockEngineInterface.swift */,
-				E6C490292C45E92E00B545B9 /* ClockEngine.swift */,
-				E6C4902B2C45E98C00B545B9 /* RoutineView.swift */,
-				E6C4902D2C45E9F400B545B9 /* PresentableRoutine.swift */,
+				E6C490332C45EBA400B545B9 /* Engine */,
+				E6C490322C45EB8600B545B9 /* View */,
 			);
 			path = "Oqloq Module";
 			sourceTree = "<group>";
@@ -165,6 +161,26 @@
 				E6C490302C45EA3D00B545B9 /* Int+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E6C490322C45EB8600B545B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6C490232C45E7D000B545B9 /* OqloqView.swift */,
+				E6C490252C45E8A300B545B9 /* OqloqViewViewModel.swift */,
+				E6C4902B2C45E98C00B545B9 /* RoutineView.swift */,
+				E6C4902D2C45E9F400B545B9 /* PresentableRoutine.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6C490332C45EBA400B545B9 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				E6C490292C45E92E00B545B9 /* ClockEngine.swift */,
+				E6C490272C45E8D300B545B9 /* ClockEngineInterface.swift */,
+			);
+			path = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
