@@ -11,7 +11,16 @@ import SwiftUI
 struct oqloqApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                NavigationStack {
+                    ContentView()
+                }
+                .tabItem { Text("house") }
+                Text("Lol")
+                    .tabItem { Text("house") }
+                Text("Hello")
+                    .tabItem { Text("house") }
+            }
         }
     }
 }
