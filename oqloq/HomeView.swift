@@ -17,7 +17,6 @@ class HomeViewViewModel: ObservableObject {
 }
 
 struct HomeView: View {
-    
     @StateObject var vm = HomeViewViewModel()
     
     var body: some View {
@@ -61,112 +60,6 @@ struct HomeView: View {
     }
 }
 
-struct OqloqView: View {
-        
-    @StateObject var vm = OqloqViewViewModel(
-        engine: ClockEngine()
-    )
-    
-    let routines: [PresentableRoutine]
-
-    var body: some View {
-        ZStack {
-            Circle()
-                .stroke(lineWidth: 4)
-                .foregroundStyle(
-                    .white.opacity(0.3)
-                )
-                .blur(radius: 1)
-                .frame(height: UIScreen.main.bounds.width * 0.9)
-                .blendMode(.color)
-            
-
-            ForEach(routines) { routine in
-                RoutineView(routine: routine)
-            }
-
-
-            
-            
-            Circle()
-                .foregroundStyle(
-                    .linearGradient(
-                        .init(
-                            colors: [.white, .gray]
-                        ),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .frame(height: UIScreen.main.bounds.width * 0.8)
-                .rotationEffect(.degrees(30))
-                .padding(.vertical)
-            
-            Circle()
-                .trim(from: 0.0, to: 0.002)
-                .stroke(.primary, lineWidth: 50)
-                .frame(height: UIScreen.main.bounds.width * 0.66)
-                .rotationEffect(Angle(degrees: -90))
-                .rotationEffect(vm.angle)
-                .animation(.easeInOut(duration: 0.5), value: vm.angle)
-
-        }
-        .shadow(color: .black.opacity(0.3), radius: 30, x: 30, y: 30)
-    }
-}
-
-class OqloqViewViewModel: ObservableObject {
-    @Published var angle: Angle = .init(degrees: .zero)
-    
-    let engine: ClockEngineInterface
-    
-    init(engine: ClockEngineInterface) {
-        self.engine = engine
-        updateAngle()
-        engine.updateAnglePeriodically() { [weak self] in
-            guard let self else { return }
-            self.updateAngle()
-        }
-    }
-    
-    private func updateAngle() {
-        angle = engine.currentAngle()
-    }
-}
-
-extension Int {
-    func angle() -> Angle {
-        return .init(degrees: Double(self) / 60 * 15)
-    }
-}
-
-protocol ClockEngineInterface {
-    func currentAngle() -> Angle
-    func updateAnglePeriodically(completion: @escaping () -> Void)
-}
-
-class ClockEngine: ClockEngineInterface {
-    var periodicUpdatePolicy: TimeInterval {
-        60
-    }
-
-    func currentAngle() -> Angle {
-        let calendar = Calendar.current
-        let currentTime = Date.now
-        let hour = calendar.component(.hour, from: currentTime)
-        let minute = calendar.component(.minute, from: currentTime)
-        let second = calendar.component(.second, from: currentTime)
-        let totalMinutes = (hour * 60 + minute) + second / 60
-        return totalMinutes.angle()
-    }
-    
-    func updateAnglePeriodically(completion: @escaping () -> Void) {
-        Timer.scheduledTimer(withTimeInterval: periodicUpdatePolicy, repeats: true) { _ in
-            completion()
-        }
-    }
-}
-
 struct RoutineDTO: Identifiable {
     let id: UUID
     let startTime: Date
@@ -198,39 +91,6 @@ extension RoutineDTO {
         let end = (endHour + endMinute / 60.0) / 24.0
         
         return PresentableRoutine(id: id, start: start, end: end, color: color)
-    }
-}
-
-struct PresentableRoutine: Identifiable {
-    let id: UUID
-    let start: CGFloat
-    let end: CGFloat
-    let color: Color
-    
-    init(
-        id: UUID = UUID(),
-        start: CGFloat,
-        end: CGFloat,
-        color: Color
-    ) {
-        self.id = id
-        self.start = start
-        self.end = end
-        self.color = color
-    }
-}
-
-struct RoutineView: View {
-    
-    let routine: PresentableRoutine
-    
-    var body: some View {
-        Circle()
-            .trim(from: CGFloat(routine.start), to: CGFloat(routine.end))
-            .stroke(lineWidth: 4)
-            .foregroundStyle(routine.color)
-            .frame(height: UIScreen.main.bounds.width * 0.9)
-            .rotationEffect(Angle(degrees: -90))
     }
 }
 
