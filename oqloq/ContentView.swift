@@ -97,7 +97,7 @@ struct OqloqView: View {
             Circle()
                 .trim(from: 0.0, to: 0.002)
                 .stroke(.primary, lineWidth: 50)
-                .frame(height: UIScreen.main.bounds.width * 0.68)
+                .frame(height: UIScreen.main.bounds.width * 0.66)
                 .rotationEffect(Angle(degrees: -90))
                 .rotationEffect(vm.angle)
                 .animation(.easeInOut(duration: 0.5), value: vm.angle)
