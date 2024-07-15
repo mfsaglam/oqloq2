@@ -7,14 +7,37 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
-    let sample: [PresentableRoutine] = [
+class HomeViewViewModel: ObservableObject {
+    @Published var sample: [PresentableRoutine] = [
         .init(start: 0, end: 0.3, color: .red),
         .init(start: 0.3, end: 0.5, color: .blue),
         .init(start: 0.5, end: 0.6, color: .green),
         .init(start: 0.6, end: 1, color: .white)
     ]
+    
+    let sampleSample: [PresentableRoutine] = [
+        .init(start: 0, end: 0.3, color: .red),
+        .init(start: 0.3, end: 0.5, color: .blue),
+        .init(start: 0.5, end: 0.6, color: .green),
+        .init(start: 0.6, end: 1, color: .white)
+    ]
+    
+    var sampleCount = 0
+    
+    func addData() {
+        if sample.count < 4{
+            sample.append(sampleSample[sampleCount])
+            sampleCount += 1
+        } else {
+            sample.removeAll()
+            sampleCount = 0
+        }
+    }
+}
+
+struct HomeView: View {
+    
+    @StateObject var vm = HomeViewViewModel()
     
     var body: some View {
         NavigationStack {
@@ -24,7 +47,7 @@ struct ContentView: View {
                 
                 VStack {
                     
-                    OqloqView(routines: sample)
+                    OqloqView(routines: vm.sample)
                         .padding()
                     
                     Text("Routine Name")
@@ -40,7 +63,7 @@ struct ContentView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 Button("Edit") {
-                    
+                    vm.addData()
                 }
             }
             ToolbarItem(placement: .topBarTrailing) {
@@ -80,6 +103,7 @@ struct OqloqView: View {
             ForEach(routines) { routine in
                 RoutineView(routine: routine)
             }
+
 
             
             
@@ -153,6 +177,43 @@ class ClockEngine: ClockEngineInterface {
     }
 }
 
+struct RoutineDTO: Identifiable {
+    let id: UUID
+    let name: String
+    let startTime: Date
+    let endTime: Date
+    let color: Color
+    
+    init(
+        id: UUID = UUID(),
+        name: String,
+        startTime: Date,
+        endTime: Date,
+        color: Color
+    ) {
+        self.id = id
+        self.name = name
+        self.startTime = startTime
+        self.endTime = endTime
+        self.color = color
+    }
+}
+
+extension RoutineDTO {
+    var presentable: PresentableRoutine {
+        let calendar = Calendar.current
+        let startHour = CGFloat(calendar.component(.hour, from: startTime))
+        let startMinute = CGFloat(calendar.component(.minute, from: startTime))
+        let endHour = CGFloat(calendar.component(.hour, from: endTime))
+        let endMinute = CGFloat(calendar.component(.minute, from: endTime))
+        
+        let start = (startHour + startMinute / 60.0) / 24.0
+        let end = (endHour + endMinute / 60.0) / 24.0
+        
+        return PresentableRoutine(id: id, start: start, end: end, color: color)
+    }
+}
+
 struct PresentableRoutine: Identifiable {
     let id: UUID
     let start: CGFloat
@@ -189,7 +250,7 @@ struct RoutineView: View {
 #Preview {
     TabView {
         NavigationStack {
-            ContentView()
+            HomeView()
         }
         Text("sda")
         Text("111")

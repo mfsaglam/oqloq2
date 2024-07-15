@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E68577BC2C45308000A95283 /* oqloqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577BB2C45308000A95283 /* oqloqApp.swift */; };
-		E68577BE2C45308000A95283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577BD2C45308000A95283 /* ContentView.swift */; };
+		E68577BE2C45308000A95283 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577BD2C45308000A95283 /* HomeView.swift */; };
 		E68577C02C45308100A95283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68577BF2C45308100A95283 /* Assets.xcassets */; };
 		E68577C32C45308100A95283 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68577C22C45308100A95283 /* Preview Assets.xcassets */; };
 		E68577CD2C45308200A95283 /* oqloqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577CC2C45308200A95283 /* oqloqTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		E68577B82C45308000A95283 /* oqloq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oqloq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68577BB2C45308000A95283 /* oqloqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oqloqApp.swift; sourceTree = "<group>"; };
-		E68577BD2C45308000A95283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E68577BD2C45308000A95283 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E68577BF2C45308100A95283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E68577C22C45308100A95283 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E68577C82C45308200A95283 /* oqloqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oqloqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				E68577BB2C45308000A95283 /* oqloqApp.swift */,
-				E68577BD2C45308000A95283 /* ContentView.swift */,
+				E68577BD2C45308000A95283 /* HomeView.swift */,
 				E68577BF2C45308100A95283 /* Assets.xcassets */,
 				E68577C12C45308100A95283 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E68577BE2C45308000A95283 /* ContentView.swift in Sources */,
+				E68577BE2C45308000A95283 /* HomeView.swift in Sources */,
 				E68577BC2C45308000A95283 /* oqloqApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

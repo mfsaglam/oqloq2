@@ -13,7 +13,7 @@ struct oqloqApp: App {
         WindowGroup {
             TabView {
                 NavigationStack {
-                    ContentView()
+                    HomeView()
                 }
                 .tabItem { Text("house") }
                 Text("Lol")
