@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let data = ["1", "2", "3"]
     var body: some View {
         NavigationStack {
             ZStack {
@@ -62,26 +61,22 @@ struct OqloqView: View {
             Circle()
                 .stroke(lineWidth: 4)
                 .foregroundStyle(
-                    .white
+                    .white.opacity(0.3)
                 )
                 .blur(radius: 1)
                 .frame(height: UIScreen.main.bounds.width * 0.9)
-                .blendMode(.colorDodge)
+                .blendMode(.color)
             
 
             Circle()
-                .stroke(lineWidth: 8)
+                .trim(from: CGFloat(0), to: CGFloat(0.25))
+                .stroke(lineWidth: 4)
                 .foregroundStyle(
                     .red
                 )
+                
                 .frame(height: UIScreen.main.bounds.width * 0.9)
-                .mask(alignment: .center) {
-                    Circle()
-                        .stroke(lineWidth: 5)
-                        .foregroundStyle(.white)
-                        .blur(radius: 0.9)
-                        .offset(x: 2.5)
-                }
+                .rotationEffect(Angle(degrees: -90))
 
             
             
@@ -105,6 +100,7 @@ struct OqloqView: View {
                 .frame(height: UIScreen.main.bounds.width * 0.68)
                 .rotationEffect(Angle(degrees: -90))
                 .rotationEffect(vm.angle)
+                .animation(.easeInOut(duration: 0.5), value: vm.angle)
 
         }
         .shadow(color: .black.opacity(0.3), radius: 30, x: 30, y: 30)
@@ -114,7 +110,6 @@ struct OqloqView: View {
 class OqloqViewViewModel: ObservableObject {
     @Published var angle: Angle = .init(degrees: .zero)
     let engine: ClockEngineInterface
-    
     init(engine: ClockEngineInterface) {
         self.engine = engine
         updateAngle()
@@ -126,7 +121,7 @@ class OqloqViewViewModel: ObservableObject {
     }
     
     private func updateAnglePeriodically() {
-        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self else { return }
             self.updateAngle()
         }
@@ -141,7 +136,6 @@ extension Int {
 
 protocol ClockEngineInterface {
     func getCurrentHourInMinutes() -> Int
-    func startRunning() -> Int
 }
 
 class ClockEngine: ClockEngineInterface {
@@ -153,14 +147,6 @@ class ClockEngine: ClockEngineInterface {
         let second = calendar.component(.second, from: currentTime)
         let totalMinutes = (hour * 60 + minute) + second / 60
         return totalMinutes
-    }
-    
-    func startRunning() -> Int {
-        var updatedMinute: Int = 0
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            updatedMinute += 10
-        }
-        return updatedMinute
     }
 }
 
