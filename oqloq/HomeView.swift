@@ -15,18 +15,34 @@ class HomeViewViewModel: ObservableObject {
         .init(start: 0.6, end: 1, color: .white)
     ]
     
-    let sampleSample: [PresentableRoutine] = [
-        .init(start: 0, end: 0.3, color: .red),
-        .init(start: 0.3, end: 0.5, color: .blue),
-        .init(start: 0.5, end: 0.6, color: .green),
-        .init(start: 0.6, end: 1, color: .white)
+    let sampleSample: [RoutineDTO] = [
+        .init(
+            startTime: .init(timeIntervalSince1970: 1721080800),
+            endTime: .init(timeIntervalSince1970: 1721098800),
+            color: .red
+        ),
+        .init(
+            startTime: .init(timeIntervalSince1970: 1721098800),
+            endTime: .init(timeIntervalSince1970: 1721113200),
+            color: .blue
+        ),
+        .init(
+            startTime: .init(timeIntervalSince1970: 1721113200),
+            endTime: .init(timeIntervalSince1970: 1721131200),
+            color: .green
+        ),
+        .init(
+            startTime: .init(timeIntervalSince1970: 1721131200),
+            endTime: .init(timeIntervalSince1970: 1721174400),
+            color: .white
+        )
     ]
     
     var sampleCount = 0
     
     func addData() {
         if sample.count < 4{
-            sample.append(sampleSample[sampleCount])
+            sample.append(sampleSample[sampleCount].presentable)
             sampleCount += 1
         } else {
             sample.removeAll()
@@ -179,20 +195,17 @@ class ClockEngine: ClockEngineInterface {
 
 struct RoutineDTO: Identifiable {
     let id: UUID
-    let name: String
     let startTime: Date
     let endTime: Date
     let color: Color
     
     init(
         id: UUID = UUID(),
-        name: String,
         startTime: Date,
         endTime: Date,
         color: Color
     ) {
         self.id = id
-        self.name = name
         self.startTime = startTime
         self.endTime = endTime
         self.color = color
