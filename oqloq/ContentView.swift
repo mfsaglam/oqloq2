@@ -9,6 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let sample: [PresentableRoutine] = [
+        .init(start: 0, end: 0.3, color: .red),
+        .init(start: 0.3, end: 0.5, color: .blue),
+        .init(start: 0.5, end: 0.6, color: .green),
+        .init(start: 0.6, end: 1, color: .white)
+    ]
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -17,7 +24,7 @@ struct ContentView: View {
                 
                 VStack {
                     
-                    OqloqView()
+                    OqloqView(routines: sample)
                         .padding()
                     
                     Text("Routine Name")
@@ -51,10 +58,12 @@ struct ContentView: View {
 }
 
 struct OqloqView: View {
-    
+        
     @StateObject var vm = OqloqViewViewModel(
         engine: ClockEngine()
     )
+    
+    let routines: [PresentableRoutine]
 
     var body: some View {
         ZStack {
@@ -68,15 +77,9 @@ struct OqloqView: View {
                 .blendMode(.color)
             
 
-            Circle()
-                .trim(from: CGFloat(0), to: CGFloat(0.25))
-                .stroke(lineWidth: 4)
-                .foregroundStyle(
-                    .red
-                )
-                
-                .frame(height: UIScreen.main.bounds.width * 0.9)
-                .rotationEffect(Angle(degrees: -90))
+            ForEach(routines) { routine in
+                RoutineView(routine: routine)
+            }
 
             
             
@@ -147,6 +150,39 @@ class ClockEngine: ClockEngineInterface {
         let second = calendar.component(.second, from: currentTime)
         let totalMinutes = (hour * 60 + minute) + second / 60
         return totalMinutes
+    }
+}
+
+struct PresentableRoutine: Identifiable {
+    let id: UUID
+    let start: CGFloat
+    let end: CGFloat
+    let color: Color
+    
+    init(
+        id: UUID = UUID(),
+        start: CGFloat,
+        end: CGFloat,
+        color: Color
+    ) {
+        self.id = id
+        self.start = start
+        self.end = end
+        self.color = color
+    }
+}
+
+struct RoutineView: View {
+    
+    let routine: PresentableRoutine
+    
+    var body: some View {
+        Circle()
+            .trim(from: CGFloat(routine.start), to: CGFloat(routine.end))
+            .stroke(lineWidth: 4)
+            .foregroundStyle(routine.color)
+            .frame(height: UIScreen.main.bounds.width * 0.9)
+            .rotationEffect(Angle(degrees: -90))
     }
 }
 
