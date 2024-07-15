@@ -117,22 +117,20 @@ struct OqloqView: View {
 
 class OqloqViewViewModel: ObservableObject {
     @Published var angle: Angle = .init(degrees: .zero)
+    
     let engine: ClockEngineInterface
+    
     init(engine: ClockEngineInterface) {
         self.engine = engine
         updateAngle()
-        updateAnglePeriodically()
-    }
-    
-    private func updateAngle() {
-        angle = engine.getCurrentHourInMinutes().angle()
-    }
-    
-    private func updateAnglePeriodically() {
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+        engine.updateAnglePeriodically() { [weak self] in
             guard let self else { return }
             self.updateAngle()
         }
+    }
+    
+    private func updateAngle() {
+        angle = engine.currentAngle()
     }
 }
 
@@ -143,18 +141,29 @@ extension Int {
 }
 
 protocol ClockEngineInterface {
-    func getCurrentHourInMinutes() -> Int
+    func currentAngle() -> Angle
+    func updateAnglePeriodically(completion: @escaping () -> Void)
 }
 
 class ClockEngine: ClockEngineInterface {
-    func getCurrentHourInMinutes() -> Int {
+    var periodicUpdatePolicy: TimeInterval {
+        60
+    }
+
+    func currentAngle() -> Angle {
         let calendar = Calendar.current
         let currentTime = Date.now
         let hour = calendar.component(.hour, from: currentTime)
         let minute = calendar.component(.minute, from: currentTime)
         let second = calendar.component(.second, from: currentTime)
         let totalMinutes = (hour * 60 + minute) + second / 60
-        return totalMinutes
+        return totalMinutes.angle()
+    }
+    
+    func updateAnglePeriodically(completion: @escaping () -> Void) {
+        Timer.scheduledTimer(withTimeInterval: periodicUpdatePolicy, repeats: true) { _ in
+            completion()
+        }
     }
 }
 
