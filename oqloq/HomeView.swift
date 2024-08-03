@@ -8,12 +8,36 @@
 import SwiftUI
 
 class HomeViewViewModel: ObservableObject {
-    @Published var sample: [PresentableRoutine] = [
-        .init(start: 0, end: 0.3, color: .red),
-        .init(start: 0.3, end: 0.5, color: .blue),
-        .init(start: 0.5, end: 0.6, color: .green),
-        .init(start: 0.6, end: 1, color: .white)
-    ]
+    @Published var sample: [PresentableRoutine] = []
+    
+    var data: [RoutineDTO] = []
+    
+    func getData() {
+        self.data = [
+            .init(
+                startTime: .init(timeIntervalSince1970: 1722888000),
+                endTime: .init(timeIntervalSince1970: 1722747600),
+                color: .red
+            ),
+            .init(
+                startTime: .init(timeIntervalSince1970: 1722747600),
+                endTime: .init(timeIntervalSince1970: 1722762000),
+                color: .blue
+            ),
+            .init(
+                startTime: .init(timeIntervalSince1970: 1722762000),
+                endTime: .init(timeIntervalSince1970: 1722776400),
+                color: .green
+            ),
+            .init(
+                startTime: .init(timeIntervalSince1970: 1722776400),
+                endTime: .init(timeIntervalSince1970: 1722888000),
+                color: .white
+            )
+        ]
+        
+        self.sample = data.map { $0.presentable }
+    }
 }
 
 struct HomeView: View {
@@ -56,6 +80,9 @@ struct HomeView: View {
                     )
                 }
             }
+        }
+        .onAppear() {
+            vm.getData()
         }
     }
 }

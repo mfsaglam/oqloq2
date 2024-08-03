@@ -41,5 +41,17 @@ class RoutineDTOTests: XCTestCase {
         
         XCTAssertEqual(presentable3.start, (23.9833 / 24.0), accuracy: 0.0001)
         XCTAssertEqual(presentable3.end, (0.0167 / 24.0), accuracy: 0.0001)
+        
+        // Test 4: Edge case - start time previous day, end time next day
+        let startTime4 = dateFormatter.date(from: "2024/07/15 23:00")!
+        let endTime4 = dateFormatter.date(from: "2024/07/16 07:00")!
+        let routine4 = RoutineDTO(startTime: startTime4, endTime: endTime4, color: .green)
+        let presentable4 = routine4.presentable
+        
+        let expectedStart4 = (23.0 / 24.0)
+        let expectedEnd4 = (7.0 / 24.0)
+        
+        XCTAssertEqual(presentable4.start, expectedStart4, accuracy: 0.0001)
+        XCTAssertEqual(presentable4.end, expectedEnd4, accuracy: 0.0001)
     }
 }
