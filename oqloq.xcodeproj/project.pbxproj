@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E2B2062C5FBFB900B71369 /* CreateRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */; };
+		12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2082C5FC02800B71369 /* RoutineDTO.swift */; };
+		12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */; };
 		E68577BC2C45308000A95283 /* oqloqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577BB2C45308000A95283 /* oqloqApp.swift */; };
 		E68577BE2C45308000A95283 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577BD2C45308000A95283 /* HomeView.swift */; };
 		E68577C02C45308100A95283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68577BF2C45308100A95283 /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineView.swift; sourceTree = "<group>"; };
+		12E2B2082C5FC02800B71369 /* RoutineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
+		12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		E68577B82C45308000A95283 /* oqloq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oqloq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68577BB2C45308000A95283 /* oqloqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oqloqApp.swift; sourceTree = "<group>"; };
 		E68577BD2C45308000A95283 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -87,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E2B2072C5FC01000B71369 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B2082C5FC02800B71369 /* RoutineDTO.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		E68577AF2C45308000A95283 = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +124,12 @@
 		E68577BA2C45308000A95283 /* oqloq */ = {
 			isa = PBXGroup;
 			children = (
+				12E2B2072C5FC01000B71369 /* Persistence */,
 				E6C4902F2C45EA2700B545B9 /* Extensions */,
 				E6C490222C45E7A000B545B9 /* Oqloq Module */,
 				E68577BB2C45308000A95283 /* oqloqApp.swift */,
 				E68577BD2C45308000A95283 /* HomeView.swift */,
+				12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */,
 				E68577BF2C45308100A95283 /* Assets.xcassets */,
 				E68577C12C45308100A95283 /* Preview Content */,
 			);
@@ -159,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				E6C490302C45EA3D00B545B9 /* Int+Extension.swift */,
+				12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -319,9 +336,12 @@
 				E6C490312C45EA3D00B545B9 /* Int+Extension.swift in Sources */,
 				E6C490262C45E8A300B545B9 /* OqloqViewViewModel.swift in Sources */,
 				E6C4902C2C45E98C00B545B9 /* RoutineView.swift in Sources */,
+				12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */,
+				12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */,
 				E6C4902A2C45E92E00B545B9 /* ClockEngine.swift in Sources */,
 				E6C4902E2C45E9F400B545B9 /* PresentableRoutine.swift in Sources */,
 				E68577BC2C45308000A95283 /* oqloqApp.swift in Sources */,
+				12E2B2062C5FBFB900B71369 /* CreateRoutineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
