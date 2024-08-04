@@ -8,46 +8,47 @@
 import SwiftUI
 
 struct CreateRoutineView: View {
-    @State private var startTime = Date()
-    @State private var endTime = Date()
-    @State private var routineColor = Color.red
+    @StateObject var vm = CreateRoutineViewModel()
 
     var body: some View {
         ZStack {
             Form {
                 Section(header: Text("Routine time")) {
                     VStack {
-                        DatePicker("Start Time", selection: $startTime, displayedComponents: .hourAndMinute)
-                        DatePicker("End Time", selection: $endTime, displayedComponents: .hourAndMinute)
+                        DatePicker("Start Time", selection: $vm.startTime, displayedComponents: .hourAndMinute)
+                        DatePicker("End Time", selection: $vm.endTime, displayedComponents: .hourAndMinute)
                     }
                 }
                 
                 Section(header: Text("Routine color")) {
-                    ColorPicker("Color", selection: $routineColor)
+                    ColorPicker("Color", selection: $vm.routineColor)
                 }
             }
-            VStack {
-                Spacer()
-                Button(action: {
-                    // Action for the button
-                    print("Button tapped")
-                }) {
-                    Label("Save", systemImage: "square.and.arrow.down")
+        }
+        .toolbar {
+            ToolbarItem {
+                Button {
+                    vm.saveRoutine()
+                } label: {
+                    Text("Save")
                 }
-                .padding()
-                
-                Button(action: {
-                    // Action for the button
-                    print("cancel Button tapped")
-                }) {
-                    Label("Cancel", systemImage: "square.and.arrow.down")
-                }
-                .padding()
             }
         }
     }
 }
 
 #Preview {
-    CreateRoutineView()
+    NavigationStack {
+        CreateRoutineView()
+    }
+}
+
+class CreateRoutineViewModel: ObservableObject {
+    @Published var startTime = Date()
+    @Published var endTime = Date()
+    @Published var routineColor = Color.red
+    
+    func saveRoutine() {
+        // message to interactor
+    }
 }

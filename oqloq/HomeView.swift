@@ -50,15 +50,8 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    
                     OqloqView(routines: vm.presentableRoutines)
                         .padding()
-                    
-                    Text("Routine Name")
-                        .foregroundStyle(.secondary)
-                    
-                    Spacer()
-                    
                 }
             }
         }
@@ -72,7 +65,7 @@ struct HomeView: View {
             }
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink {
-                    Text("lol")
+                    CreateRoutineView()
                 } label: {
                     Label(
                         title: { Text("") },
