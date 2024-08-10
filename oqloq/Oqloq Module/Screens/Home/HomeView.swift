@@ -81,11 +81,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    TabView {
-        NavigationStack {
-            HomeView()
-        }
-        Text("sda")
-        Text("111")
+    NavigationStack {
+        HomeView()
     }
 }
