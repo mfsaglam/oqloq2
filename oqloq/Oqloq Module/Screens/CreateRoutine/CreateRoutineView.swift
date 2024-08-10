@@ -73,9 +73,3 @@ class CreateRoutineViewModel: ObservableObject {
 protocol RoutinePersistenceInteractor {
     func saveRoutine(routine: RoutineDTO) throws
 }
-
-class AnyPersistenceInteractor: RoutinePersistenceInteractor {
-    func saveRoutine(routine: RoutineDTO) throws {
-        print("saved")
-    }
-}

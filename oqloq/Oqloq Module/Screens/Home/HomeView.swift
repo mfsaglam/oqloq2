@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class HomeViewViewModel: ObservableObject {
+class HomeViewModel: ObservableObject {
     @Published var presentableRoutines: [PresentableRoutine] = []
     
     var data: [RoutineDTO] = []
@@ -41,7 +41,7 @@ class HomeViewViewModel: ObservableObject {
 }
 
 struct HomeView: View {
-    @StateObject var vm = HomeViewViewModel()
+    @StateObject var vm = HomeViewModel()
     
     var body: some View {
         NavigationStack {
@@ -77,21 +77,6 @@ struct HomeView: View {
         .onAppear() {
             vm.getData()
         }
-    }
-}
-
-extension RoutineDTO {
-    var presentable: PresentableRoutine {
-        let calendar = Calendar.current
-        let startHour = CGFloat(calendar.component(.hour, from: startTime))
-        let startMinute = CGFloat(calendar.component(.minute, from: startTime))
-        let endHour = CGFloat(calendar.component(.hour, from: endTime))
-        let endMinute = CGFloat(calendar.component(.minute, from: endTime))
-        
-        let start = (startHour + startMinute / 60.0) / 24.0
-        let end = (endHour + endMinute / 60.0) / 24.0
-        
-        return PresentableRoutine(id: id, start: start, end: end, color: .init(hex: color))
     }
 }
 
