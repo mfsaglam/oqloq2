@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CreateRoutineView: View {
-    @StateObject var vm = CreateRoutineViewModel()
+    @StateObject var vm = CreateRoutineViewModel(interactor: AnyPersistenceInteractor())
 
     var body: some View {
         ZStack {
@@ -28,7 +28,7 @@ struct CreateRoutineView: View {
         .toolbar {
             ToolbarItem {
                 Button {
-                    vm.saveRoutine()
+                    try? vm.saveRoutine()
                 } label: {
                     Text("Save")
                 }
@@ -48,7 +48,34 @@ class CreateRoutineViewModel: ObservableObject {
     @Published var endTime = Date()
     @Published var routineColor = Color.red
     
-    func saveRoutine() {
-        // message to interactor
+    private var interactor: RoutinePersistenceInteractor
+    
+    init(interactor: RoutinePersistenceInteractor) {
+        self.interactor = interactor
+    }
+    
+    private func makeRoutineDTO() -> RoutineDTO? {
+        guard let colorHex = routineColor.toHex() else { return nil }
+        return .init(
+            startTime: startTime,
+            endTime: endTime,
+            color: colorHex
+        )
+    }
+    
+    func saveRoutine() throws {
+        if let routine = makeRoutineDTO() {
+            try interactor.saveRoutine(routine: routine)
+        }
+    }
+}
+
+protocol RoutinePersistenceInteractor {
+    func saveRoutine(routine: RoutineDTO) throws
+}
+
+class AnyPersistenceInteractor: RoutinePersistenceInteractor {
+    func saveRoutine(routine: RoutineDTO) throws {
+        print("saved")
     }
 }
