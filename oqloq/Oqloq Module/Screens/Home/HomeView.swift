@@ -59,8 +59,13 @@ struct HomeView: View {
         .navigationTitle("oqloq")
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button("Edit") {
+                NavigationLink {
                     
+                } label: {
+                    Label(
+                        title: { Text("Edit") },
+                        icon: { }
+                    )
                 }
             }
             ToolbarItem(placement: .topBarTrailing) {
