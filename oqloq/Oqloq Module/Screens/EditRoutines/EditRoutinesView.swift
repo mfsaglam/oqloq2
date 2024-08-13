@@ -32,22 +32,6 @@ struct EditRoutinesView: View {
         // show alert to make sure
         // vm.delete(atOffsets: offsets)
     }
-    
-    struct RoutineListView: View {
-        let startTime: String
-        let endTime: String
-        let color: Color
-        var body: some View {
-            HStack {
-                Circle()
-                    .frame(width: 20)
-                    .foregroundStyle(color)
-                Spacer()
-                Text("\(startTime) - \(endTime)")
-                
-            }
-        }
-    }
 }
 
 extension Date {
