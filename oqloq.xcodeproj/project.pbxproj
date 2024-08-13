@@ -10,6 +10,7 @@
 		12E2B2062C5FBFB900B71369 /* CreateRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */; };
 		12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2082C5FC02800B71369 /* RoutineDTO.swift */; };
 		12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */; };
+		E6221E792C6C035400A3ED91 /* EditRoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6221E782C6C035400A3ED91 /* EditRoutinesView.swift */; };
 		E68577BC2C45308000A95283 /* oqloqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577BB2C45308000A95283 /* oqloqApp.swift */; };
 		E68577BE2C45308000A95283 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68577BD2C45308000A95283 /* HomeView.swift */; };
 		E68577C02C45308100A95283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68577BF2C45308100A95283 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineView.swift; sourceTree = "<group>"; };
 		12E2B2082C5FC02800B71369 /* RoutineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E6221E782C6C035400A3ED91 /* EditRoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRoutinesView.swift; sourceTree = "<group>"; };
 		E68577B82C45308000A95283 /* oqloq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oqloq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68577BB2C45308000A95283 /* oqloqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oqloqApp.swift; sourceTree = "<group>"; };
 		E68577BD2C45308000A95283 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 				E6C490332C45EBA400B545B9 /* Oqloq Engine */,
 			);
 			path = "Engine Module";
+			sourceTree = "<group>";
+		};
+		E6221E772C6C033500A3ED91 /* EditRoutines */ = {
+			isa = PBXGroup;
+			children = (
+				E6221E782C6C035400A3ED91 /* EditRoutinesView.swift */,
+			);
+			path = EditRoutines;
 			sourceTree = "<group>";
 		};
 		E68577AF2C45308000A95283 = {
@@ -245,6 +255,7 @@
 		E6C490322C45EB8600B545B9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E6221E772C6C033500A3ED91 /* EditRoutines */,
 				E689A7062C67AF1B00C45E3E /* CreateRoutine */,
 				E689A7052C67AF0000C45E3E /* Components */,
 				E689A7042C67AEE200C45E3E /* Routine */,
@@ -393,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E689A70A2C67AF8900C45E3E /* AnyPersistenceInteractor.swift in Sources */,
+				E6221E792C6C035400A3ED91 /* EditRoutinesView.swift in Sources */,
 				E6C490282C45E8D300B545B9 /* ClockEngineInterface.swift in Sources */,
 				E68577BE2C45308000A95283 /* HomeView.swift in Sources */,
 				E6C490242C45E7D000B545B9 /* OqloqView.swift in Sources */,
