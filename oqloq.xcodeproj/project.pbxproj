@@ -106,6 +106,14 @@
 			path = "Persistence Module";
 			sourceTree = "<group>";
 		};
+		E6221E762C6BFE9100A3ED91 /* Engine Module */ = {
+			isa = PBXGroup;
+			children = (
+				E6C490332C45EBA400B545B9 /* Oqloq Engine */,
+			);
+			path = "Engine Module";
+			sourceTree = "<group>";
+		};
 		E68577AF2C45308000A95283 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +137,7 @@
 		E68577BA2C45308000A95283 /* oqloq */ = {
 			isa = PBXGroup;
 			children = (
+				E6221E762C6BFE9100A3ED91 /* Engine Module */,
 				12E2B2072C5FC01000B71369 /* Persistence Module */,
 				E6C4902F2C45EA2700B545B9 /* Extensions */,
 				E6C490222C45E7A000B545B9 /* Oqloq Module */,
@@ -218,7 +227,6 @@
 		E6C490222C45E7A000B545B9 /* Oqloq Module */ = {
 			isa = PBXGroup;
 			children = (
-				E6C490332C45EBA400B545B9 /* Engine */,
 				E6C490322C45EB8600B545B9 /* Screens */,
 			);
 			path = "Oqloq Module";
@@ -245,13 +253,13 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		E6C490332C45EBA400B545B9 /* Engine */ = {
+		E6C490332C45EBA400B545B9 /* Oqloq Engine */ = {
 			isa = PBXGroup;
 			children = (
 				E6C490292C45E92E00B545B9 /* ClockEngine.swift */,
 				E6C490272C45E8D300B545B9 /* ClockEngineInterface.swift */,
 			);
-			path = Engine;
+			path = "Oqloq Engine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
