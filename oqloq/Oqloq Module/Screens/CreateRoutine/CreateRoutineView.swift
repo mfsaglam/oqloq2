@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CreateRoutineView: View {
-    @StateObject var vm = CreateRoutineViewModel(interactor: AnyPersistenceInteractor())
+    @StateObject var vm = CreateRoutineViewModel(interactor: RealmPersistenceInteractor())
 
     var body: some View {
         ZStack {
