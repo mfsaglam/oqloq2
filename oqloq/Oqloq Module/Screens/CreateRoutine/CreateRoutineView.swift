@@ -28,7 +28,9 @@ struct CreateRoutineView: View {
         .toolbar {
             ToolbarItem {
                 Button {
-                    try? vm.saveRoutine()
+                    Task {
+                        try? await vm.saveRoutine()
+                    }
                 } label: {
                     Text("Save")
                 }
@@ -63,13 +65,13 @@ class CreateRoutineViewModel: ObservableObject {
         )
     }
     
-    func saveRoutine() throws {
+    func saveRoutine() async throws {
         if let routine = makeRoutineDTO() {
-            try interactor.saveRoutine(routine: routine)
+            try await interactor.saveRoutine(routine: routine)
         }
     }
 }
 
 protocol RoutinePersistenceInteractor {
-    func saveRoutine(routine: RoutineDTO) throws
+    func saveRoutine(routine: RoutineDTO) async throws
 }
