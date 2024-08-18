@@ -25,7 +25,7 @@
 		E695677F2C70F8E300826C9B /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E695677D2C70F8E300826C9B /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E6C490212C45DF8700B545B9 /* RoutineDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490202C45DF8700B545B9 /* RoutineDTOTests.swift */; };
 		E6C490242C45E7D000B545B9 /* OqloqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490232C45E7D000B545B9 /* OqloqView.swift */; };
-		E6C490262C45E8A300B545B9 /* OqloqViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490252C45E8A300B545B9 /* OqloqViewViewModel.swift */; };
+		E6C490262C45E8A300B545B9 /* OqloqViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490252C45E8A300B545B9 /* OqloqViewModel.swift */; };
 		E6C490282C45E8D300B545B9 /* ClockEngineInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490272C45E8D300B545B9 /* ClockEngineInterface.swift */; };
 		E6C4902A2C45E92E00B545B9 /* ClockEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490292C45E92E00B545B9 /* ClockEngine.swift */; };
 		E6C4902C2C45E98C00B545B9 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4902B2C45E98C00B545B9 /* RoutineView.swift */; };
@@ -84,7 +84,7 @@
 		E689A70B2C67B01600C45E3E /* RoutineDTO+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineDTO+Extension.swift"; sourceTree = "<group>"; };
 		E6C490202C45DF8700B545B9 /* RoutineDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTOTests.swift; sourceTree = "<group>"; };
 		E6C490232C45E7D000B545B9 /* OqloqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OqloqView.swift; sourceTree = "<group>"; };
-		E6C490252C45E8A300B545B9 /* OqloqViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OqloqViewViewModel.swift; sourceTree = "<group>"; };
+		E6C490252C45E8A300B545B9 /* OqloqViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OqloqViewModel.swift; sourceTree = "<group>"; };
 		E6C490272C45E8D300B545B9 /* ClockEngineInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockEngineInterface.swift; sourceTree = "<group>"; };
 		E6C490292C45E92E00B545B9 /* ClockEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockEngine.swift; sourceTree = "<group>"; };
 		E6C4902B2C45E98C00B545B9 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 		E689A7052C67AF0000C45E3E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E6C490252C45E8A300B545B9 /* OqloqViewViewModel.swift */,
+				E6C490252C45E8A300B545B9 /* OqloqViewModel.swift */,
 				E6C490232C45E7D000B545B9 /* OqloqView.swift */,
 			);
 			path = Components;
@@ -444,7 +444,7 @@
 				E68577BE2C45308000A95283 /* HomeView.swift in Sources */,
 				E6C490242C45E7D000B545B9 /* OqloqView.swift in Sources */,
 				E6C490312C45EA3D00B545B9 /* Int+Extension.swift in Sources */,
-				E6C490262C45E8A300B545B9 /* OqloqViewViewModel.swift in Sources */,
+				E6C490262C45E8A300B545B9 /* OqloqViewModel.swift in Sources */,
 				E6C4902C2C45E98C00B545B9 /* RoutineView.swift in Sources */,
 				12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */,
 				12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */,

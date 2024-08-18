@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class OqloqViewViewModel: ObservableObject {
+class OqloqViewModel: ObservableObject {
     @Published var angle: Angle = .init(degrees: .zero)
     
     let engine: ClockEngineInterface

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OqloqView: View {
         
-    @StateObject var vm = OqloqViewViewModel(
+    @StateObject var vm = OqloqViewModel(
         engine: ClockEngine()
     )
     
@@ -58,5 +58,5 @@ struct OqloqView: View {
 }
 
 #Preview {
-    OqloqView(vm: OqloqViewViewModel(engine: ClockEngine()), routines: [])
+    OqloqView(vm: OqloqViewModel(engine: ClockEngine()), routines: [])
 }
