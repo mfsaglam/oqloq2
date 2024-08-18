@@ -49,7 +49,7 @@ struct HomeView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 NavigationLink {
-                    
+                    EditRoutinesView()
                 } label: {
                     Label(
                         title: { Text("Edit") },
