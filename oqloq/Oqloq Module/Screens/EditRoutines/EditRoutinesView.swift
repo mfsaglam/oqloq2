@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+class EditRoutinesViewModel: ObservableObject {
+    @Published var routines: [RoutineDTO] = []
+}
+
 struct EditRoutinesView: View {
     private let routines: [RoutineDTO] = [
         .init(startTime: .thirteenOClock, endTime: .twentyOneOClock, color: "#0000FF"),
@@ -30,7 +34,7 @@ struct EditRoutinesView: View {
     
     func deleteRoutine(at offsets: IndexSet) {
         // show alert to make sure
-        // vm.delete(atOffsets: offsets)
+//         vm.delete(atOffsets: offsets)
     }
 }
 

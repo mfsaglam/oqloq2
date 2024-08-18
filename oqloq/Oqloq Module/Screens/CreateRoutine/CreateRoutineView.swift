@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CreateRoutineView: View {
+    @Environment(\.presentationMode) var presentationMode
     @StateObject var vm = CreateRoutineViewModel(interactor: RealmPersistenceInteractor())
 
     var body: some View {
@@ -28,9 +29,8 @@ struct CreateRoutineView: View {
         .toolbar {
             ToolbarItem {
                 Button {
-                    Task {
-                        try? await vm.saveRoutine()
-                    }
+                    try? vm.saveRoutine()
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Save")
                 }
@@ -65,13 +65,15 @@ class CreateRoutineViewModel: ObservableObject {
         )
     }
     
-    func saveRoutine() async throws {
+    func saveRoutine() throws {
         if let routine = makeRoutineDTO() {
-            try await interactor.saveRoutine(routine: routine)
+            try interactor.saveRoutine(routine: routine)
         }
     }
 }
 
 protocol RoutinePersistenceInteractor {
-    func saveRoutine(routine: RoutineDTO) async throws
+    func saveRoutine(routine: RoutineDTO) throws
+    func loadRoutines() throws -> [RoutineDTO]
+    func deleteRoutine(_ routine: RoutineDTO) throws
 }

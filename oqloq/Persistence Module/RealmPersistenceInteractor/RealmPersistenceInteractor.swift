@@ -15,6 +15,17 @@ class RoutineModel: Object {
     @Persisted var color: String
 }
 
+extension RoutineModel {
+    var asDto: RoutineDTO {
+        return .init(
+            id: self.id,
+            startTime: self.startTime,
+            endTime: self.endTime,
+            color: self.color
+        )
+    }
+}
+
 class RealmPersistenceInteractor: RoutinePersistenceInteractor {
     let realm = try! Realm()
 
@@ -29,14 +40,19 @@ class RealmPersistenceInteractor: RoutinePersistenceInteractor {
         }
     }
 
-    func loadRoutines() -> [RoutineModel] {
+    func loadRoutines() throws -> [RoutineDTO] {
         let routines = realm.objects(RoutineModel.self)
-        return Array(routines)
+        return Array(routines).map { $0.asDto }
     }
 
-    func deleteRoutine(_ routine: RoutineModel) {
-        try! realm.write {
-            realm.delete(routine)
+    func deleteRoutine(_ routine: RoutineDTO) throws {
+        let model = RoutineModel()
+        model.id = routine.id
+        model.startTime = routine.startTime
+        model.endTime = routine.endTime
+        model.color = routine.color
+        try realm.write {
+            realm.delete(model)
         }
     }
 }
