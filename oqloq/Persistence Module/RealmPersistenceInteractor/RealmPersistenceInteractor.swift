@@ -46,13 +46,10 @@ class RealmPersistenceInteractor: RoutinePersistenceInteractor {
     }
 
     func deleteRoutine(_ routine: RoutineDTO) throws {
-        let model = RoutineModel()
-        model.id = routine.id
-        model.startTime = routine.startTime
-        model.endTime = routine.endTime
-        model.color = routine.color
-        try realm.write {
-            realm.delete(model)
+        if let routineToDelete = realm.object(ofType: RoutineModel.self, forPrimaryKey: routine.id) {
+            try realm.write {
+                realm.delete(routineToDelete)
+            }
         }
     }
 }
