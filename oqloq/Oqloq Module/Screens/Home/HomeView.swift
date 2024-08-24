@@ -35,7 +35,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.yellow
+                Color.wallpaper
                     .ignoresSafeArea()
                 
                 VStack {

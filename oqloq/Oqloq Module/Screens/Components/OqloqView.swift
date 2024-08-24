@@ -20,7 +20,7 @@ struct OqloqView: View {
             Circle()
                 .stroke(lineWidth: 4)
                 .foregroundStyle(
-                    .white.opacity(0.3)
+                    .solidBack.opacity(0.3)
                 )
                 .blur(radius: 1)
                 .frame(height: UIScreen.main.bounds.width * 0.9)
@@ -31,17 +31,9 @@ struct OqloqView: View {
             }
             
             Circle()
-                .foregroundStyle(
-                    .linearGradient(
-                        .init(
-                            colors: [.white, .gray]
-                        ),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
+                .foregroundStyle(.solidBack.gradient)
                 .frame(height: UIScreen.main.bounds.width * 0.8)
-                .rotationEffect(.degrees(30))
+                .rotationEffect(.degrees(-30))
                 .padding(.vertical)
             
             Circle()
