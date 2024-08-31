@@ -42,4 +42,26 @@ extension Color {
 
         return String(format: "#%06x", rgb)
     }
+    
+    static var random: Color {
+        let preDefinedColors: [Color] = [
+            .black,
+            .red,
+            .green,
+            .blue,
+            .yellow,
+            .brown,
+            .purple,
+            .orange,
+            .pink,
+            .cyan,
+            .gray,
+            .indigo,
+            .mint,
+            .teal,
+            .white
+        ]
+        
+        return preDefinedColors.randomElement() ?? .red
+    }
 }

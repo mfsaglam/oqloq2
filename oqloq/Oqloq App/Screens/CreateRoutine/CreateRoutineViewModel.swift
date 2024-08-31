@@ -10,7 +10,7 @@ import SwiftUI
 class CreateRoutineViewModel: ObservableObject {
     @Published var startTime = Date()
     @Published var endTime = Date()
-    @Published var routineColor = Color.red
+    @Published var routineColor = Color.random
     
     private var interactor: RoutinePersistenceInteractor
     
