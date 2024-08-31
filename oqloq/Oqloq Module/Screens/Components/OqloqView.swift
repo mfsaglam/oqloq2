@@ -21,7 +21,7 @@ struct OqloqView: View {
             Circle()
                 .stroke(lineWidth: 4)
                 .foregroundStyle(
-                    .solidBack.opacity(0.3)
+                    .solidBack.opacity(0.8)
                 )
                 .blur(radius: 1)
                 .frame(height: screenwidth * 0.9)
