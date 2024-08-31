@@ -30,7 +30,7 @@ struct HomeView: View {
                     EditRoutinesView()
                 } label: {
                     Label(
-                        title: { Text("Edit") },
+                        title: { Text("home_edit") },
                         icon: { }
                     )
                 }

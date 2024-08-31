@@ -4,16 +4,6 @@
     "" : {
 
     },
-    "%@ - %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ - %2$@"
-          }
-        }
-      }
-    },
     "createRoutine_color" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -80,9 +70,6 @@
         }
       }
     },
-    "Edit" : {
-
-    },
     "editRoutines_alert_confirmMessage" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -123,6 +110,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remove All"
+          }
+        }
+      }
+    },
+    "home_edit" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
           }
         }
       }
