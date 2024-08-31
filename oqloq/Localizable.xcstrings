@@ -64,6 +64,12 @@
             "state" : "translated",
             "value" : "Cor"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвет"
+          }
         }
       }
     },
@@ -116,6 +122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora de término"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время окончания"
           }
         }
       }
@@ -170,6 +182,12 @@
             "state" : "translated",
             "value" : "Cor da rotina"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цвет рутины"
+          }
         }
       }
     },
@@ -222,6 +240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить"
           }
         }
       }
@@ -276,6 +300,12 @@
             "state" : "translated",
             "value" : "Hora de início"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время начала"
+          }
         }
       }
     },
@@ -328,6 +358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora da rotina"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время рутины"
           }
         }
       }
@@ -382,6 +418,12 @@
             "state" : "translated",
             "value" : "Você tem certeza de que deseja remover todas as rotinas? Esta ação não pode ser desfeita."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы уверены, что хотите удалить все рутины? Это действие нельзя отменить."
+          }
         }
       }
     },
@@ -434,6 +476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Confirmar Remoção"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подтвердить удаление"
           }
         }
       }
@@ -488,6 +536,12 @@
             "state" : "translated",
             "value" : "Remover Todos"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить все"
+          }
         }
       }
     },
@@ -541,6 +595,12 @@
             "state" : "translated",
             "value" : "Remover Todos"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить все"
+          }
         }
       }
     },
@@ -592,6 +652,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Editar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Редактировать"
           }
         }
       }
@@ -646,6 +712,12 @@
             "state" : "translated",
             "value" : "Não perca suas rotinas e construa seu futuro."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не пропустите свои рутины и стройте свое будущее."
+          }
         }
       }
     },
@@ -698,6 +770,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cada passo que você dá hoje é um progresso em direção ao seu objetivo."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый шаг, который вы делаете сегодня, это прогресс к вашей цели."
           }
         }
       }
@@ -752,6 +830,12 @@
             "state" : "translated",
             "value" : "Consistência hoje, sucesso amanhã."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последовательность сегодня, успех завтра."
+          }
         }
       }
     },
@@ -804,6 +888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lembre-se, são os pequenos esforços todos os dias que somam grandes mudanças."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помните, что маленькие усилия каждый день складываются в большие изменения."
           }
         }
       }
@@ -858,6 +948,12 @@
             "state" : "translated",
             "value" : "Não deixe essa oportunidade passar—faça acontecer!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не упустите эту возможность—сделайте это!"
+          }
         }
       }
     },
@@ -910,6 +1006,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mantenha-se comprometido, focado e forte."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставайтесь преданными, сосредоточенными и сильными."
           }
         }
       }
@@ -964,6 +1066,12 @@
             "state" : "translated",
             "value" : "Você está mais perto do seu objetivo a cada rotina."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С каждой рутиной вы приближаетесь к своей цели.\n"
+          }
         }
       }
     },
@@ -1016,6 +1124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disciplina hoje significa liberdade amanhã."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дисциплина сегодня означает свободу завтра."
           }
         }
       }
@@ -1070,6 +1184,12 @@
             "state" : "translated",
             "value" : "Seus hábitos moldam seu destino—continue avançando."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваши привычки формируют вашу судьбу—продолжайте двигаться вперед."
+          }
         }
       }
     },
@@ -1122,6 +1242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continue—seu futuro eu ficará orgulhoso."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжайте—ваше будущее я будет гордиться вами."
           }
         }
       }
@@ -1176,6 +1302,12 @@
             "state" : "translated",
             "value" : "Sua rotina programada começa agora."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запланированная рутина начинается сейчас."
+          }
         }
       }
     },
@@ -1228,6 +1360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora de construir seus hábitos!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время строить свои привычки!"
           }
         }
       }
@@ -1282,6 +1420,12 @@
             "state" : "translated",
             "value" : "É hora da rotina—vamos lá!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время рутины—давайте двигаться!"
+          }
         }
       }
     },
@@ -1334,6 +1478,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mantenha-se no caminho—sua rotina está esperando."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставайтесь на пути—ваша рутина ждет."
           }
         }
       }
@@ -1388,6 +1538,12 @@
             "state" : "translated",
             "value" : "Consistência é a chave—vamos fazer isso!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последовательность—это ключ—давайте сделаем это!"
+          }
         }
       }
     },
@@ -1440,6 +1596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu futuro eu vai te agradecer!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше будущее я будет благодарно вам!"
           }
         }
       }
@@ -1494,6 +1656,12 @@
             "state" : "translated",
             "value" : "Pequenos passos levam a grandes resultados."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Маленькие шаги ведут к большим результатам."
+          }
         }
       }
     },
@@ -1546,6 +1714,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Faça o hoje valer a pena!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сделайте сегодняшний день значимым!"
           }
         }
       }
@@ -1600,6 +1774,12 @@
             "state" : "translated",
             "value" : "Sua jornada continua agora.Levante-se e trabalhe—sua rotina está à espera."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше путешествие продолжается сейчас."
+          }
         }
       }
     },
@@ -1652,6 +1832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Levante-se e trabalhe—sua rotina está à espera."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вставайте и работайте—ваша рутина ждет."
           }
         }
       }
