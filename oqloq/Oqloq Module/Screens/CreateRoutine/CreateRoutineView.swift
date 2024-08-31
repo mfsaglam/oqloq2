@@ -71,7 +71,7 @@ class CreateRoutineViewModel: ObservableObject {
             scheduleDailyNotification(
                 at: Calendar.current.component(.hour, from: routine.startTime),
                 minute: Calendar.current.component(.minute, from: routine.startTime),
-                title: "Your \("color name") routine starts now.",
+                title: "Your scheduled routine starts now.",
                 body: "Do not miss your routines and build your future.",
                 id: routine.id
             )
