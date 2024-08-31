@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RoutineView: View {
-    
     let routine: PresentableRoutine
     private let screenWidth = UIScreen.main.bounds.width
     private let routineWidth = UIScreen.main.bounds.width * 0.0102

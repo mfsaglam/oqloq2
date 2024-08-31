@@ -12,6 +12,7 @@
 		1262E9652C83475900D730E3 /* CreateRoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9642C83475900D730E3 /* CreateRoutineViewModel.swift */; };
 		1262E9672C8347B300D730E3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9662C8347B300D730E3 /* Date+Extension.swift */; };
 		1262E9692C8347FD00D730E3 /* EditRoutinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9682C8347FD00D730E3 /* EditRoutinesViewModel.swift */; };
+		1262E96B2C83486600D730E3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E96A2C83486600D730E3 /* HomeViewModel.swift */; };
 		12E2B2062C5FBFB900B71369 /* CreateRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */; };
 		12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2082C5FC02800B71369 /* RoutineDTO.swift */; };
 		12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */; };
@@ -85,6 +86,7 @@
 		1262E9642C83475900D730E3 /* CreateRoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineViewModel.swift; sourceTree = "<group>"; };
 		1262E9662C8347B300D730E3 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		1262E9682C8347FD00D730E3 /* EditRoutinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRoutinesViewModel.swift; sourceTree = "<group>"; };
+		1262E96A2C83486600D730E3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineView.swift; sourceTree = "<group>"; };
 		12E2B2082C5FC02800B71369 /* RoutineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				E68577BD2C45308000A95283 /* HomeView.swift */,
+				1262E96A2C83486600D730E3 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E689A70A2C67AF8900C45E3E /* RealmPersistenceInteractor.swift in Sources */,
+				1262E96B2C83486600D730E3 /* HomeViewModel.swift in Sources */,
 				E6221E792C6C035400A3ED91 /* EditRoutinesView.swift in Sources */,
 				E6C490282C45E8D300B545B9 /* ClockEngineInterface.swift in Sources */,
 				1262E9612C8342B200D730E3 /* NotificationCenter.swift in Sources */,
