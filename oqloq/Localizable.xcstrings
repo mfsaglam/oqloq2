@@ -58,6 +58,12 @@
             "state" : "translated",
             "value" : "색상"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cor"
+          }
         }
       }
     },
@@ -104,6 +110,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "종료 시간"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de término"
           }
         }
       }
@@ -152,6 +164,12 @@
             "state" : "translated",
             "value" : "루틴 색상"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cor da rotina"
+          }
         }
       }
     },
@@ -198,6 +216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "저장"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar"
           }
         }
       }
@@ -246,6 +270,12 @@
             "state" : "translated",
             "value" : "시작 시간"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de início"
+          }
         }
       }
     },
@@ -292,6 +322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "루틴 시간"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora da rotina"
           }
         }
       }
@@ -340,6 +376,12 @@
             "state" : "translated",
             "value" : "모든 루틴을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você tem certeza de que deseja remover todas as rotinas? Esta ação não pode ser desfeita."
+          }
         }
       }
     },
@@ -386,6 +428,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "삭제 확인"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmar Remoção"
           }
         }
       }
@@ -434,6 +482,12 @@
             "state" : "translated",
             "value" : "모두 삭제"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remover Todos"
+          }
         }
       }
     },
@@ -481,6 +535,12 @@
             "state" : "translated",
             "value" : "모두 삭제"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remover Todos"
+          }
         }
       }
     },
@@ -526,6 +586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "편집"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
           }
         }
       }
@@ -574,6 +640,12 @@
             "state" : "translated",
             "value" : "루틴을 놓치지 말고 미래를 만들어 가세요."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não perca suas rotinas e construa seu futuro."
+          }
         }
       }
     },
@@ -620,6 +692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "오늘의 모든 걸음이 목표를 향한 진전을 의미합니다."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada passo que você dá hoje é um progresso em direção ao seu objetivo."
           }
         }
       }
@@ -668,6 +746,12 @@
             "state" : "translated",
             "value" : "오늘의 일관성이 내일의 성공을 가져옵니다."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consistência hoje, sucesso amanhã."
+          }
         }
       }
     },
@@ -714,6 +798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "기억하세요, 매일의 작은 노력이 큰 변화를 만들어냅니다."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lembre-se, são os pequenos esforços todos os dias que somam grandes mudanças."
           }
         }
       }
@@ -762,6 +852,12 @@
             "state" : "translated",
             "value" : "이 기회를 놓치지 마세요—실현하세요!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não deixe essa oportunidade passar—faça acontecer!"
+          }
         }
       }
     },
@@ -808,6 +904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "헌신을 유지하고, 집중하며, 강하게 유지하세요."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenha-se comprometido, focado e forte."
           }
         }
       }
@@ -856,6 +958,12 @@
             "state" : "translated",
             "value" : "매 루틴마다 목표에 더 가까워집니다."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você está mais perto do seu objetivo a cada rotina."
+          }
         }
       }
     },
@@ -902,6 +1010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "오늘의 규율이 내일의 자유를 의미합니다."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disciplina hoje significa liberdade amanhã."
           }
         }
       }
@@ -950,6 +1064,12 @@
             "state" : "translated",
             "value" : "당신의 습관이 운명을 형성합니다—계속 나아가세요."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seus hábitos moldam seu destino—continue avançando."
+          }
         }
       }
     },
@@ -996,6 +1116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "계속 나아가세요—미래의 당신이 자랑스러워할 것입니다."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue—seu futuro eu ficará orgulhoso."
           }
         }
       }
@@ -1044,6 +1170,12 @@
             "state" : "translated",
             "value" : "예정된 루틴이 지금 시작됩니다."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua rotina programada começa agora."
+          }
         }
       }
     },
@@ -1090,6 +1222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "습관을 만들 시간입니다!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de construir seus hábitos!"
           }
         }
       }
@@ -1138,6 +1276,12 @@
             "state" : "translated",
             "value" : "루틴 시간입니다—시작합시다!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "É hora da rotina—vamos lá!"
+          }
         }
       }
     },
@@ -1184,6 +1328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "경로를 유지하세요—루틴이 기다리고 있습니다."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenha-se no caminho—sua rotina está esperando."
           }
         }
       }
@@ -1232,6 +1382,12 @@
             "state" : "translated",
             "value" : "일관성이 중요합니다—해봅시다!"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consistência é a chave—vamos fazer isso!"
+          }
         }
       }
     },
@@ -1278,6 +1434,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "미래의 당신이 감사할 것입니다!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seu futuro eu vai te agradecer!"
           }
         }
       }
@@ -1326,6 +1488,12 @@
             "state" : "translated",
             "value" : "작은 걸음이 큰 결과를 가져옵니다."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pequenos passos levam a grandes resultados."
+          }
         }
       }
     },
@@ -1372,6 +1540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "오늘을 소중히 하세요!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faça o hoje valer a pena!"
           }
         }
       }
@@ -1420,6 +1594,12 @@
             "state" : "translated",
             "value" : "당신의 여정은 지금 계속됩니다."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua jornada continua agora.Levante-se e trabalhe—sua rotina está à espera."
+          }
         }
       }
     },
@@ -1466,6 +1646,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "일어나서 열심히 하세요—당신의 루틴이 기다리고 있습니다."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Levante-se e trabalhe—sua rotina está à espera."
           }
         }
       }
