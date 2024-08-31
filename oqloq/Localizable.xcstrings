@@ -40,6 +40,18 @@
             "state" : "translated",
             "value" : "Color"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रंग"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "色"
+          }
         }
       }
     },
@@ -68,6 +80,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora de finalización"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समाप्ति समय"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "終了時刻"
           }
         }
       }
@@ -98,6 +122,18 @@
             "state" : "translated",
             "value" : "Color de rutina"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रूटीन का रंग"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ルーチンの色"
+          }
         }
       }
     },
@@ -126,6 +162,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guardar"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सहेजें"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
           }
         }
       }
@@ -156,6 +204,18 @@
             "state" : "translated",
             "value" : "Hora de inicio"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रारंभ समय"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始時刻"
+          }
         }
       }
     },
@@ -184,6 +244,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora de rutina"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रूटीन समय"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ルーチンの時間"
           }
         }
       }
@@ -214,6 +286,18 @@
             "state" : "translated",
             "value" : "¿Estás seguro de que quieres eliminar todas las rutinas? Esta acción no se puede deshacer."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्या आप वाकई सभी रूटीन को हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのルーチンを削除してもよろしいですか？この操作は元に戻せません。"
+          }
         }
       }
     },
@@ -242,6 +326,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Confirmar eliminación"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हटाने की पुष्टि करें"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除を確認"
           }
         }
       }
@@ -272,6 +368,18 @@
             "state" : "translated",
             "value" : "Eliminar todo"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सभी हटाएँ"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべて削除"
+          }
         }
       }
     },
@@ -301,6 +409,18 @@
             "state" : "translated",
             "value" : "Eliminar todo"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सभी हटाएँ"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編集"
+          }
         }
       }
     },
@@ -328,6 +448,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Editar"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "संपादित करें"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編集"
           }
         }
       }
@@ -358,6 +490,18 @@
             "state" : "translated",
             "value" : "No te pierdas tus rutinas y construye tu futuro."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अपनी रूटीन को न चूके और अपने भविष्य का निर्माण करें।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ルーチンを逃さずに未来を築こう。"
+          }
         }
       }
     },
@@ -386,6 +530,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cada paso que das hoy es un avance hacia tu meta."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आज उठाया गया हर कदम आपके लक्ष्य की ओर प्रगति है।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日の一歩一歩が目標に向かう進展です。\n"
           }
         }
       }
@@ -416,6 +572,18 @@
             "state" : "translated",
             "value" : "Consistencia hoy, éxito mañana."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आज की निरंतरता, कल की सफलता।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日の一貫性が明日の成功をもたらします。"
+          }
         }
       }
     },
@@ -444,6 +612,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recuerda, son los pequeños esfuerzos cada día los que suman grandes cambios."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "याद रखें, हर दिन के छोटे प्रयास बड़े बदलाव लाते हैं।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "覚えておいてください、小さな努力が積み重なって大きな変化を生み出します。"
           }
         }
       }
@@ -474,6 +654,18 @@
             "state" : "translated",
             "value" : "¡No dejes pasar esta oportunidad—haz que suceda!"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "याद रखें, हर दिन के छोटे प्रयास बड़े बदलाव लाते हैं।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この機会を逃さずに実現させましょう！"
+          }
         }
       }
     },
@@ -502,6 +694,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mantente comprometido, enfocado y fuerte."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रतिबद्ध रहें, फोकस बनाए रखें, मजबूत बने रहें।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コミットメントを持ち、集中し、強くあり続けてください。"
           }
         }
       }
@@ -532,6 +736,18 @@
             "state" : "translated",
             "value" : "Estás más cerca de tu meta con cada rutina."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रतिबद्ध रहें, फोकस बनाए रखें, मजबूत बने रहें।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ルーチンを重ねることで目標に近づいています。"
+          }
         }
       }
     },
@@ -560,6 +776,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disciplina hoy significa libertad mañana."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रतिबद्ध रहें, फोकस बनाए रखें, मजबूत बने रहें।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日の規律が明日の自由を意味します。"
           }
         }
       }
@@ -590,6 +818,18 @@
             "state" : "translated",
             "value" : "Tus hábitos moldean tu destino—sigue adelante."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रतिबद्ध रहें, फोकस बनाए रखें, मजबूत बने रहें।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "習慣が運命を形作ります—前進し続けてください。"
+          }
         }
       }
     },
@@ -618,6 +858,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sigue adelante—tu futuro yo estará orgulloso."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जारी रखें—आपका भविष्य का खुद गर्वित होगा।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続けてください—未来の自分が誇りに思うでしょう。"
           }
         }
       }
@@ -648,6 +900,18 @@
             "state" : "translated",
             "value" : "Tu rutina programada comienza ahora."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपकी निर्धारित रूटीन अब शुरू होती है।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "予定されたルーチンが今から始まります。"
+          }
         }
       }
     },
@@ -676,6 +940,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Es hora de construir tus hábitos!"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अपने आदतें बनाने का समय है!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "習慣を築く時が来ました！"
           }
         }
       }
@@ -706,6 +982,18 @@
             "state" : "translated",
             "value" : "Es hora de rutina—¡vamos a movernos!"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "यह रूटीन का समय है—आगे बढ़ें!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ルーチンの時間です—さあ、始めましょう！"
+          }
         }
       }
     },
@@ -734,6 +1022,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mantente en el camino—tu rutina te espera."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पथ पर बने रहें—आपकी रूटीन इंतजार कर रही है।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "軌道に乗り続けてください—ルーチンが待っています。"
           }
         }
       }
@@ -764,6 +1064,18 @@
             "state" : "translated",
             "value" : "La consistencia es clave—¡hagámoslo!"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "निरंतरता महत्वपूर्ण है—आइए इसे करें!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一貫性が鍵です—やりましょう！"
+          }
         }
       }
     },
@@ -792,6 +1104,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Tu futuro yo te lo agradecerá!"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपका भविष्य का खुद आपको धन्यवाद देगा!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未来の自分が感謝するでしょう！"
           }
         }
       }
@@ -822,6 +1146,18 @@
             "state" : "translated",
             "value" : "Los pequeños pasos llevan a grandes resultados."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "छोटे कदम बड़े परिणाम लाते हैं।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小さなステップが大きな成果をもたらします。"
+          }
         }
       }
     },
@@ -850,6 +1186,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Haz que hoy cuente!"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आज को महत्वपूर्ण बनाएं!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日を大切にしましょう！"
           }
         }
       }
@@ -880,6 +1228,18 @@
             "state" : "translated",
             "value" : "Tu viaje continúa ahora."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपकी यात्रा अब जारी है।"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの旅は今続いています。"
+          }
         }
       }
     },
@@ -908,6 +1268,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Despierta y trabaja—tu rutina te espera."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उठो और मेहनत करो—आपकी रूटीन का इंतजार है।\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起きて頑張りましょう—あなたのルーチンが待っています。"
           }
         }
       }
