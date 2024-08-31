@@ -68,6 +68,36 @@ class CreateRoutineViewModel: ObservableObject {
     func saveRoutine() throws {
         if let routine = makeRoutineDTO() {
             try interactor.saveRoutine(routine: routine)
+            scheduleDailyNotification(
+                at: Calendar.current.component(.hour, from: routine.startTime),
+                minute: Calendar.current.component(.minute, from: routine.startTime),
+                title: "Your \("color name") routine starts now.",
+                body: "Do not miss your routines and build your future.",
+                id: routine.id
+            )
+        }
+    }
+    
+    func scheduleDailyNotification(at hour: Int, minute: Int, title: String, body: String, id: UUID) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = UNNotificationSound.default
+
+        var dateComponents = DateComponents()
+        dateComponents.hour = hour
+        dateComponents.minute = minute
+
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+
+        let request = UNNotificationRequest(identifier: id.uuidString, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            } else {
+                print("Daily notification scheduled for \(hour):\(minute)")
+            }
         }
     }
 }
