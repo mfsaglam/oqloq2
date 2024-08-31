@@ -26,8 +26,8 @@ class NotificationCenter {
     
     func scheduleDailyNotification(at hour: Int, minute: Int, id: String) {
         let content = UNMutableNotificationContent()
-        content.title = makeNotificationTitle()
-        content.body = makeNotificationBody()
+        content.title = NSLocalizedString(makeNotificationTitle(), comment: "")
+        content.body = NSLocalizedString(makeNotificationBody(), comment: "")
         content.sound = UNNotificationSound.default
 
         var dateComponents = DateComponents()
