@@ -68,17 +68,29 @@ class CreateRoutineViewModel: ObservableObject {
     func saveRoutine() throws {
         if let routine = makeRoutineDTO() {
             try interactor.saveRoutine(routine: routine)
-            scheduleDailyNotification(
+            NotificationCenter.shared.scheduleDailyNotification(
                 at: Calendar.current.component(.hour, from: routine.startTime),
                 minute: Calendar.current.component(.minute, from: routine.startTime),
                 title: "Your scheduled routine starts now.",
                 body: "Do not miss your routines and build your future.",
-                id: routine.id
+                id: routine.id.uuidString
             )
         }
     }
+}
+
+protocol RoutinePersistenceInteractor {
+    func saveRoutine(routine: RoutineDTO) throws
+    func loadRoutines() throws -> [RoutineDTO]
+    func deleteRoutine(_ routine: RoutineDTO) throws
+}
+
+class NotificationCenter {
+    static let shared = NotificationCenter()
     
-    func scheduleDailyNotification(at hour: Int, minute: Int, title: String, body: String, id: UUID) {
+    private init() { }
+    
+    func scheduleDailyNotification(at hour: Int, minute: Int, title: String, body: String, id: String) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
@@ -90,20 +102,19 @@ class CreateRoutineViewModel: ObservableObject {
 
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
 
-        let request = UNNotificationRequest(identifier: id.uuidString, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
 
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             } else {
-                print("Daily notification scheduled for \(hour):\(minute)")
+                print("Daily notification scheduled for \(hour):\(minute) with id: \(id)")
             }
         }
     }
-}
-
-protocol RoutinePersistenceInteractor {
-    func saveRoutine(routine: RoutineDTO) throws
-    func loadRoutines() throws -> [RoutineDTO]
-    func deleteRoutine(_ routine: RoutineDTO) throws
+    
+    func cancelScheduledNotification(with identifier: String) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [identifier])
+        print("Notification with identifier \(identifier) cancelled.")
+    }
 }

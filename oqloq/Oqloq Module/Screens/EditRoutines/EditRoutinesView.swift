@@ -30,6 +30,7 @@ class EditRoutinesViewModel: ObservableObject {
             try indexSet.forEach { index in
                 let routine = routines[index]
                 try interactor.deleteRoutine(routine)
+                NotificationCenter.shared.cancelScheduledNotification(with: routine.id.uuidString)
             }
             routines.remove(atOffsets: indexSet)
         } catch {
