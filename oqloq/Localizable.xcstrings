@@ -70,6 +70,12 @@
             "state" : "translated",
             "value" : "Цвет"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สี"
+          }
         }
       }
     },
@@ -128,6 +134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время окончания"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาสิ้นสุด"
           }
         }
       }
@@ -188,6 +200,12 @@
             "state" : "translated",
             "value" : "Цвет рутины"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สีของกิจวัตร"
+          }
         }
       }
     },
@@ -246,6 +264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сохранить"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึก"
           }
         }
       }
@@ -306,6 +330,12 @@
             "state" : "translated",
             "value" : "Время начала"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาเริ่มต้น"
+          }
         }
       }
     },
@@ -364,6 +394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время рутины"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาของกิจวัตร"
           }
         }
       }
@@ -424,6 +460,12 @@
             "state" : "translated",
             "value" : "Вы уверены, что хотите удалить все рутины? Это действие нельзя отменить."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณแน่ใจหรือว่าต้องการลบกิจวัตรทั้งหมด? การกระทำนี้ไม่สามารถย้อนกลับได้"
+          }
         }
       }
     },
@@ -482,6 +524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Подтвердить удаление"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยืนยันการลบ"
           }
         }
       }
@@ -542,6 +590,12 @@
             "state" : "translated",
             "value" : "Удалить все"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบทั้งหมด"
+          }
         }
       }
     },
@@ -601,6 +655,12 @@
             "state" : "translated",
             "value" : "Удалить все"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบทั้งหมด"
+          }
         }
       }
     },
@@ -658,6 +718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Редактировать"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แก้ไข"
           }
         }
       }
@@ -718,6 +784,12 @@
             "state" : "translated",
             "value" : "Не пропустите свои рутины и стройте свое будущее."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อย่าพลาดกิจวัตรของคุณและสร้างอนาคตของคุณ"
+          }
         }
       }
     },
@@ -776,6 +848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каждый шаг, который вы делаете сегодня, это прогресс к вашей цели."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทุกก้าวที่คุณก้าวในวันนี้คือความก้าวหน้าไปสู่เป้าหมายของคุณ"
           }
         }
       }
@@ -836,6 +914,12 @@
             "state" : "translated",
             "value" : "Последовательность сегодня, успех завтра."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความสม่ำเสมอในวันนี้ ความสำเร็จในวันพรุ่งนี้"
+          }
         }
       }
     },
@@ -894,6 +978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помните, что маленькие усилия каждый день складываются в большие изменения."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จงจำไว้ว่าความพยายามเล็กๆ ทุกวันจะนำไปสู่การเปลี่ยนแปลงครั้งใหญ่"
           }
         }
       }
@@ -954,6 +1044,12 @@
             "state" : "translated",
             "value" : "Не упустите эту возможность—сделайте это!"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อย่าปล่อยให้โอกาสนี้หลุดลอยไป—ทำให้มันเกิดขึ้น!"
+          }
         }
       }
     },
@@ -1012,6 +1108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оставайтесь преданными, сосредоточенными и сильными."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รักษาความมุ่งมั่น รักษาความมุ่งมั่นและความแข็งแกร่ง"
           }
         }
       }
@@ -1072,6 +1174,12 @@
             "state" : "translated",
             "value" : "С каждой рутиной вы приближаетесь к своей цели.\n"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณใกล้เป้าหมายของคุณมากขึ้นด้วยกิจวัตรแต่ละอย่าง"
+          }
         }
       }
     },
@@ -1130,6 +1238,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дисциплина сегодня означает свободу завтра."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วินัยในวันนี้หมายถึงเสรีภาพในวันพรุ่งนี้"
           }
         }
       }
@@ -1190,6 +1304,12 @@
             "state" : "translated",
             "value" : "Ваши привычки формируют вашу судьбу—продолжайте двигаться вперед."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นิสัยของคุณกำหนดชะตากรรมของคุณ—เดินหน้าต่อไป"
+          }
         }
       }
     },
@@ -1248,6 +1368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Продолжайте—ваше будущее я будет гордиться вами."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดำเนินต่อไป—ตัวคุณในอนาคตจะภูมิใจในตัวคุณ"
           }
         }
       }
@@ -1308,6 +1434,12 @@
             "state" : "translated",
             "value" : "Запланированная рутина начинается сейчас."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กิจวัตรที่กำหนดไว้ของคุณเริ่มต้นตอนนี้"
+          }
         }
       }
     },
@@ -1366,6 +1498,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время строить свои привычки!"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาสร้างนิสัยของคุณ!"
           }
         }
       }
@@ -1426,6 +1564,12 @@
             "state" : "translated",
             "value" : "Время рутины—давайте двигаться!"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถึงเวลาทำกิจวัตร—มาเริ่มกันเถอะ!"
+          }
         }
       }
     },
@@ -1484,6 +1628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оставайтесь на пути—ваша рутина ждет."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อยู่ในเส้นทาง—กิจวัตรของคุณรออยู่"
           }
         }
       }
@@ -1544,6 +1694,12 @@
             "state" : "translated",
             "value" : "Последовательность—это ключ—давайте сделаем это!"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความสม่ำเสมอคือกุญแจ—มาทำมันให้สำเร็จ!"
+          }
         }
       }
     },
@@ -1602,6 +1758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ваше будущее я будет благодарно вам!"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตัวคุณในอนาคตจะขอบคุณคุณ!"
           }
         }
       }
@@ -1662,6 +1824,12 @@
             "state" : "translated",
             "value" : "Маленькие шаги ведут к большим результатам."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ก้าวเล็กๆ นำไปสู่ผลลัพธ์ที่ใหญ่โต"
+          }
         }
       }
     },
@@ -1720,6 +1888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сделайте сегодняшний день значимым!"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำให้วันนี้มีค่า!"
           }
         }
       }
@@ -1780,6 +1954,12 @@
             "state" : "translated",
             "value" : "Ваше путешествие продолжается сейчас."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การเดินทางของคุณยังคงดำเนินต่อไป"
+          }
         }
       }
     },
@@ -1838,6 +2018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вставайте и работайте—ваша рутина ждет."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลุกขึ้นและทำงาน—กิจวัตรของคุณรออยู่"
           }
         }
       }
