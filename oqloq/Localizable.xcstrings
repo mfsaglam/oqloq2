@@ -88,6 +88,18 @@
             "state" : "translated",
             "value" : "Màu sắc"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顏色"
+          }
         }
       }
     },
@@ -164,6 +176,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian kết thúc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "结束时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "結束時間"
           }
         }
       }
@@ -242,6 +266,18 @@
             "state" : "translated",
             "value" : "Màu sắc của thói quen"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "例程颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "例程顏色"
+          }
         }
       }
     },
@@ -318,6 +354,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lưu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
           }
         }
       }
@@ -396,6 +444,18 @@
             "state" : "translated",
             "value" : "Thời gian bắt đầu"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始時間"
+          }
         }
       }
     },
@@ -472,6 +532,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian thói quen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "例程时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "例程時間"
           }
         }
       }
@@ -550,6 +622,18 @@
             "state" : "translated",
             "value" : "Bạn có chắc chắn muốn xóa tất cả các thói quen không? Hành động này không thể hoàn tác."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你确定要删除所有例程吗？此操作无法撤销。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你確定要刪除所有例程嗎？此操作無法撤銷。"
+          }
         }
       }
     },
@@ -626,6 +710,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xác nhận xóa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认删除"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "確認刪除"
           }
         }
       }
@@ -704,6 +800,18 @@
             "state" : "translated",
             "value" : "Xóa tất cả"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除全部"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除全部"
+          }
         }
       }
     },
@@ -781,6 +889,18 @@
             "state" : "translated",
             "value" : "Xóa tất cả"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除全部"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除全部"
+          }
         }
       }
     },
@@ -856,6 +976,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chỉnh sửa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編輯"
           }
         }
       }
@@ -934,6 +1066,18 @@
             "state" : "translated",
             "value" : "Đừng bỏ lỡ các thói quen của bạn và xây dựng tương lai của bạn."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不要错过你的例程，建设你的未来。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不要錯過你的例程，建立你的未來。"
+          }
         }
       }
     },
@@ -1010,6 +1154,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mỗi bước bạn đi hôm nay là một bước tiến về phía mục tiêu của bạn."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你今天迈出的每一步都是向目标迈进的进展。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你今天的每一步都是朝著目標邁進的進展。"
           }
         }
       }
@@ -1088,6 +1244,18 @@
             "state" : "translated",
             "value" : "Tính nhất quán hôm nay, thành công ngày mai."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天的一致性，明天的成功。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天的一致性，明天的成功。"
+          }
         }
       }
     },
@@ -1164,6 +1332,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhớ rằng, những nỗ lực nhỏ mỗi ngày sẽ tích lũy thành những thay đổi lớn."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "记住，每天的小努力积累起来就是大的改变。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "記住，每天的小努力會累積成為巨大的變化。"
           }
         }
       }
@@ -1242,6 +1422,18 @@
             "state" : "translated",
             "value" : "Đừng để cơ hội này trôi qua—hãy biến nó thành hiện thực!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不要让这个机会溜走—让它成为现实！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不要讓這個機會溜走—讓它成為現實！"
+          }
         }
       }
     },
@@ -1318,6 +1510,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giữ sự cam kết, giữ sự tập trung, giữ vững sức mạnh."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持承诺，保持专注，保持强大。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持承諾，保持專注，保持強大。"
           }
         }
       }
@@ -1396,6 +1600,18 @@
             "state" : "translated",
             "value" : "Bạn đang tiến gần hơn đến mục tiêu của bạn với mỗi thói quen."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每完成一个例程，你就离目标更近一步。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每完成一個例程，你就離目標更近一步。"
+          }
         }
       }
     },
@@ -1472,6 +1688,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kỷ luật hôm nay có nghĩa là tự do ngày mai."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天的纪律意味着明天的自由。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天的紀律意味著明天的自由。"
           }
         }
       }
@@ -1550,6 +1778,18 @@
             "state" : "translated",
             "value" : "Những thói quen của bạn định hình số phận của bạn—tiếp tục tiến lên."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的习惯塑造你的命运—继续前进。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的習慣塑造你的命運—繼續前進。"
+          }
         }
       }
     },
@@ -1626,6 +1866,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tiếp tục—bạn trong tương lai sẽ tự hào về bạn."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "继续前进—你未来的自己会为你感到骄傲。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繼續前進—你未來的自己會為你感到驕傲。"
           }
         }
       }
@@ -1704,6 +1956,18 @@
             "state" : "translated",
             "value" : "Thói quen đã lên lịch của bạn bắt đầu ngay bây giờ."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你预定的例程现在开始。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的預定例程現在開始。"
+          }
         }
       }
     },
@@ -1780,6 +2044,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian để xây dựng thói quen của bạn!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是时候建立你的习惯了！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是時候建立你的習慣了！"
           }
         }
       }
@@ -1858,6 +2134,18 @@
             "state" : "translated",
             "value" : "Đến lúc thực hiện thói quen—hãy bắt đầu thôi!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是例程时间—让我们开始行动吧！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是例程時間—讓我們開始吧！"
+          }
         }
       }
     },
@@ -1934,6 +2222,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giữ vững kế hoạch—thói quen của bạn đang chờ đợi."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持在轨道上—你的例程在等待。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持在軌道上—你的例程在等待。"
           }
         }
       }
@@ -2012,6 +2312,18 @@
             "state" : "translated",
             "value" : "Tính nhất quán là chìa khóa—hãy làm điều này!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一致性是关键—让我们做吧！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一致性是關鍵—讓我們做吧！"
+          }
         }
       }
     },
@@ -2088,6 +2400,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tương lai của bạn sẽ cảm ơn bạn!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的未来自己会感谢你！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的未來自己會感謝你！"
           }
         }
       }
@@ -2166,6 +2490,18 @@
             "state" : "translated",
             "value" : "Những bước nhỏ dẫn đến kết quả lớn."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小步骤带来大结果。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小步驟帶來大結果。"
+          }
         }
       }
     },
@@ -2242,6 +2578,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hãy làm cho hôm nay có giá trị!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "让今天有价值！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "讓今天有價值！"
           }
         }
       }
@@ -2320,6 +2668,18 @@
             "state" : "translated",
             "value" : "Cuộc hành trình của bạn tiếp tục ngay bây giờ."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的旅程现在继续。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的旅程現在繼續。"
+          }
         }
       }
     },
@@ -2396,6 +2756,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dậy và làm việc—thói quen của bạn đang chờ đợi."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起床努力—你的例程在等待。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起床努力—你的例程在等待。"
           }
         }
       }
