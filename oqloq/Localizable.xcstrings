@@ -82,6 +82,12 @@
             "state" : "translated",
             "value" : "Renk"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màu sắc"
+          }
         }
       }
     },
@@ -152,6 +158,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitiş zamanı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian kết thúc"
           }
         }
       }
@@ -224,6 +236,12 @@
             "state" : "translated",
             "value" : "Rutin rengi"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màu sắc của thói quen"
+          }
         }
       }
     },
@@ -294,6 +312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaydet"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu"
           }
         }
       }
@@ -366,6 +390,12 @@
             "state" : "translated",
             "value" : "Başlangıç zamanı"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian bắt đầu"
+          }
         }
       }
     },
@@ -436,6 +466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rutin zamanı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian thói quen"
           }
         }
       }
@@ -508,6 +544,12 @@
             "state" : "translated",
             "value" : "Tüm rutinleri silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có chắc chắn muốn xóa tất cả các thói quen không? Hành động này không thể hoàn tác."
+          }
         }
       }
     },
@@ -578,6 +620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Silmeyi Onayla"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xác nhận xóa"
           }
         }
       }
@@ -650,6 +698,12 @@
             "state" : "translated",
             "value" : "Tümünü Kaldır"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa tất cả"
+          }
         }
       }
     },
@@ -721,6 +775,12 @@
             "state" : "translated",
             "value" : "Tümünü Kaldır"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa tất cả"
+          }
         }
       }
     },
@@ -790,6 +850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düzenle"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉnh sửa"
           }
         }
       }
@@ -862,6 +928,12 @@
             "state" : "translated",
             "value" : "Rutinlerini kaçırma ve geleceğini inşa et."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đừng bỏ lỡ các thói quen của bạn và xây dựng tương lai của bạn."
+          }
         }
       }
     },
@@ -932,6 +1004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün attığın her adım, hedefine doğru bir ilerlemedir."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mỗi bước bạn đi hôm nay là một bước tiến về phía mục tiêu của bạn."
           }
         }
       }
@@ -1004,6 +1082,12 @@
             "state" : "translated",
             "value" : "Bugün tutarlılık, yarın başarı getirir."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tính nhất quán hôm nay, thành công ngày mai."
+          }
         }
       }
     },
@@ -1074,6 +1158,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unutma, her gün yapılan küçük çabalar büyük değişimlere yol açar."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhớ rằng, những nỗ lực nhỏ mỗi ngày sẽ tích lũy thành những thay đổi lớn."
           }
         }
       }
@@ -1146,6 +1236,12 @@
             "state" : "translated",
             "value" : "Bu fırsatı kaçırma—gerçekleştir!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đừng để cơ hội này trôi qua—hãy biến nó thành hiện thực!"
+          }
         }
       }
     },
@@ -1216,6 +1312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kararlı kal, odaklan, güçlü ol."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giữ sự cam kết, giữ sự tập trung, giữ vững sức mạnh."
           }
         }
       }
@@ -1288,6 +1390,12 @@
             "state" : "translated",
             "value" : "Her rutinle hedefine biraz daha yaklaşıyorsun."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn đang tiến gần hơn đến mục tiêu của bạn với mỗi thói quen."
+          }
         }
       }
     },
@@ -1358,6 +1466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugün disiplin, yarın özgürlük demektir."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kỷ luật hôm nay có nghĩa là tự do ngày mai."
           }
         }
       }
@@ -1430,6 +1544,12 @@
             "state" : "translated",
             "value" : "Alışkanlıkların kaderini şekillendirir—ilerlemeye devam et."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những thói quen của bạn định hình số phận của bạn—tiếp tục tiến lên."
+          }
         }
       }
     },
@@ -1500,6 +1620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Devam et—gelecekteki halin gurur duyacak."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp tục—bạn trong tương lai sẽ tự hào về bạn."
           }
         }
       }
@@ -1572,6 +1698,12 @@
             "state" : "translated",
             "value" : "Planlı rutinin şimdi başlıyor."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thói quen đã lên lịch của bạn bắt đầu ngay bây giờ."
+          }
         }
       }
     },
@@ -1642,6 +1774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alışkanlıklarını oluşturma zamanı!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian để xây dựng thói quen của bạn!"
           }
         }
       }
@@ -1714,6 +1852,12 @@
             "state" : "translated",
             "value" : "Rutin zamanı—hadi başlayalım!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đến lúc thực hiện thói quen—hãy bắt đầu thôi!"
+          }
         }
       }
     },
@@ -1784,6 +1928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yolda kal—rutinin bekliyor."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giữ vững kế hoạch—thói quen của bạn đang chờ đợi."
           }
         }
       }
@@ -1856,6 +2006,12 @@
             "state" : "translated",
             "value" : "Tutarlılık önemlidir—hadi başlayalım!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tính nhất quán là chìa khóa—hãy làm điều này!"
+          }
         }
       }
     },
@@ -1926,6 +2082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gelecekteki halin sana teşekkür edecek!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tương lai của bạn sẽ cảm ơn bạn!"
           }
         }
       }
@@ -1998,6 +2160,12 @@
             "state" : "translated",
             "value" : "Küçük adımlar büyük sonuçlara yol açar."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những bước nhỏ dẫn đến kết quả lớn."
+          }
         }
       }
     },
@@ -2068,6 +2236,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugünü değerlendir!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy làm cho hôm nay có giá trị!"
           }
         }
       }
@@ -2140,6 +2314,12 @@
             "state" : "translated",
             "value" : "Yolculuğun şimdi devam ediyor."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuộc hành trình của bạn tiếp tục ngay bây giờ."
+          }
         }
       }
     },
@@ -2210,6 +2390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kalk ve çalış—rutinin bekliyor."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dậy và làm việc—thói quen của bạn đang chờ đợi."
           }
         }
       }
