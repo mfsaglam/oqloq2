@@ -15,11 +15,12 @@ struct OqloqView: View {
     
     let routines: [PresentableRoutine]
     private let screenwidth = UIScreen.main.bounds.width
+    private let routineWidth = UIScreen.main.bounds.width * 0.0102
 
     var body: some View {
         ZStack {
             Circle()
-                .stroke(lineWidth: 4)
+                .stroke(lineWidth: routineWidth)
                 .foregroundStyle(
                     .solidBack.opacity(0.8)
                 )
