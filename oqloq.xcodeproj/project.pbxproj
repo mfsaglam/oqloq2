@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1262E9612C8342B200D730E3 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9602C8342B200D730E3 /* NotificationCenter.swift */; };
 		12E2B2062C5FBFB900B71369 /* CreateRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */; };
 		12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2082C5FC02800B71369 /* RoutineDTO.swift */; };
 		12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1262E9602C8342B200D730E3 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 		12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineView.swift; sourceTree = "<group>"; };
 		12E2B2082C5FC02800B71369 /* RoutineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		E6C490222C45E7A000B545B9 /* Oqloq App */ = {
 			isa = PBXGroup;
 			children = (
+				1262E9602C8342B200D730E3 /* NotificationCenter.swift */,
 				E6C490322C45EB8600B545B9 /* Screens */,
 			);
 			path = "Oqloq App";
@@ -456,6 +459,7 @@
 				E689A70A2C67AF8900C45E3E /* RealmPersistenceInteractor.swift in Sources */,
 				E6221E792C6C035400A3ED91 /* EditRoutinesView.swift in Sources */,
 				E6C490282C45E8D300B545B9 /* ClockEngineInterface.swift in Sources */,
+				1262E9612C8342B200D730E3 /* NotificationCenter.swift in Sources */,
 				E68577BE2C45308000A95283 /* HomeView.swift in Sources */,
 				E6C490242C45E7D000B545B9 /* OqloqView.swift in Sources */,
 				E6C490312C45EA3D00B545B9 /* Int+Extension.swift in Sources */,
