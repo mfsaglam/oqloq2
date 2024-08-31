@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1262E9612C8342B200D730E3 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9602C8342B200D730E3 /* NotificationCenter.swift */; };
+		1262E9632C83471400D730E3 /* RoutinePersistenceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9622C83471400D730E3 /* RoutinePersistenceInteractor.swift */; };
 		12E2B2062C5FBFB900B71369 /* CreateRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */; };
 		12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2082C5FC02800B71369 /* RoutineDTO.swift */; };
 		12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		1262E9602C8342B200D730E3 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		1262E9622C83471400D730E3 /* RoutinePersistenceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinePersistenceInteractor.swift; sourceTree = "<group>"; };
 		12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineView.swift; sourceTree = "<group>"; };
 		12E2B2082C5FC02800B71369 /* RoutineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 		E6C490222C45E7A000B545B9 /* Oqloq App */ = {
 			isa = PBXGroup;
 			children = (
+				1262E9622C83471400D730E3 /* RoutinePersistenceInteractor.swift */,
 				1262E9602C8342B200D730E3 /* NotificationCenter.swift */,
 				E6C490322C45EB8600B545B9 /* Screens */,
 			);
@@ -467,6 +470,7 @@
 				E6C4902C2C45E98C00B545B9 /* RoutineView.swift in Sources */,
 				12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */,
 				12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */,
+				1262E9632C83471400D730E3 /* RoutinePersistenceInteractor.swift in Sources */,
 				E6C4902A2C45E92E00B545B9 /* ClockEngine.swift in Sources */,
 				E6C4902E2C45E9F400B545B9 /* PresentableRoutine.swift in Sources */,
 				E68577BC2C45308000A95283 /* oqloqApp.swift in Sources */,
