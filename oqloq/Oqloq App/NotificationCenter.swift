@@ -54,16 +54,17 @@ class NotificationCenter {
     
     private func makeNotificationTitle() -> String {
         let notificationTitles = [
-            "Your scheduled routine starts now.",
-            "Time to build your habits!",
-            "It's routine time—let's get moving!",
-            "Stay on track—your routine is waiting.",
-            "Consistency is key—let’s do this!",
-            "Your future self will thank you!",
-            "Small steps lead to big results.",
-            "Make today count!",
-            "Your journey continues now.",
-            "Rise and grind—your routine awaits.",
+            "notificationTitle_1",
+            "notificationTitle_2",
+            "notificationTitle_3",
+            "notificationTitle_4",
+            "notificationTitle_5",
+            "notificationTitle_6",
+            "notificationTitle_7",
+            "notificationTitle_8",
+            "notificationTitle_9",
+            "notificationTitle_10",
+
         ]
         
         return notificationTitles.randomElement() ?? ""
@@ -71,16 +72,16 @@ class NotificationCenter {
     
     private func makeNotificationBody() -> String {
         let notificationBodies = [
-            "Do not miss your routines and build your future.",
-            "Every step you take today is progress toward your goal.",
-            "Consistency today, success tomorrow.",
-            "Remember, it’s the small efforts every day that add up to big changes.",
-            "Don’t let this opportunity pass—make it happen!",
-            "Stay committed, stay focused, stay strong.",
-            "You’re closer to your goal with every routine.",
-            "Discipline today means freedom tomorrow.",
-            "Your habits shape your destiny—keep pushing forward.",
-            "Keep going—your future self will be proud.",
+            "notificationBody_1",
+            "notificationBody_2",
+            "notificationBody_3",
+            "notificationBody_4",
+            "notificationBody_5",
+            "notificationBody_6",
+            "notificationBody_7",
+            "notificationBody_8",
+            "notificationBody_9",
+            "notificationBody_10",
         ]
         
         return notificationBodies.randomElement() ?? ""

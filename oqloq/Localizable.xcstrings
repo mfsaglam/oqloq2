@@ -1,6 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "%@ - %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ - %2$@"
+          }
+        }
+      }
+    },
     "createRoutine_color" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -12,18 +25,7 @@
         }
       }
     },
-    "createRoutine_routineColor" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Routine color"
-          }
-        }
-      }
-    },
-    "createRoutine_routineTime_endTime" : {
+    "createRoutine_endTime" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -34,13 +36,13 @@
         }
       }
     },
-    "createRoutine_routineTime_title" : {
+    "createRoutine_routineColor" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Routine time"
+            "value" : "Routine color"
           }
         }
       }
@@ -66,6 +68,20 @@
           }
         }
       }
+    },
+    "createRoutine_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Routine time"
+          }
+        }
+      }
+    },
+    "Edit" : {
+
     },
     "editRoutines_alert_confirmMessage" : {
       "extractionState" : "manual",
@@ -330,6 +346,9 @@
           }
         }
       }
+    },
+    "oqloq" : {
+
     }
   },
   "version" : "1.0"

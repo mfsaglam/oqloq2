@@ -31,14 +31,14 @@ struct EditRoutinesView: View {
                 Button {
                     showAlert = true
                 } label: {
-                    Text("Remove All")
+                    Text("editRoutines_removeAllButton")
                         .foregroundStyle(.red)
                 }
                 .alert(isPresented: $showAlert) {
                     Alert(
-                        title: Text("Confirm Removal"),
-                        message: Text("Are you sure you want to remove all routines? This action cannot be undone."),
-                        primaryButton: .destructive(Text("Remove All")) {
+                        title: Text("editRoutines_alert_confirmTitle"),
+                        message: Text("editRoutines_alert_confirmMessage"),
+                        primaryButton: .destructive(Text("editRoutines_alert_removeAllButton")) {
                             removeAllRoutines()
                         },
                         secondaryButton: .cancel()

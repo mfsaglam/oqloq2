@@ -14,15 +14,15 @@ struct CreateRoutineView: View {
     var body: some View {
         ZStack {
             Form {
-                Section(header: Text("Routine time")) {
+                Section(header: Text("createRoutine_title")) {
                     VStack {
-                        DatePicker("Start Time", selection: $vm.startTime, displayedComponents: .hourAndMinute)
-                        DatePicker("End Time", selection: $vm.endTime, displayedComponents: .hourAndMinute)
+                        DatePicker("createRoutine_startTime", selection: $vm.startTime, displayedComponents: .hourAndMinute)
+                        DatePicker("createRoutine_endTime", selection: $vm.endTime, displayedComponents: .hourAndMinute)
                     }
                 }
                 
-                Section(header: Text("Routine color")) {
-                    ColorPicker("Color", selection: $vm.routineColor)
+                Section(header: Text("createRoutine_routineColor")) {
+                    ColorPicker("createRoutine_color", selection: $vm.routineColor)
                 }
             }
         }
@@ -32,7 +32,7 @@ struct CreateRoutineView: View {
                     try? vm.saveRoutine()
                     presentationMode.wrappedValue.dismiss()
                 } label: {
-                    Text("Save")
+                    Text("createRoutine_save")
                 }
             }
         }
