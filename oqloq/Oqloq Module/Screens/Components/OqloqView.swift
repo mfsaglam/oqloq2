@@ -39,8 +39,8 @@ struct OqloqView: View {
             
             Circle()
                 .trim(from: 0.0, to: 0.002)
-                .stroke(.primary, lineWidth: screenwidth * 0.14)
-                .frame(height: screenwidth * 0.66)
+                .stroke(.primary, lineWidth: screenwidth * 0.12)
+                .frame(height: screenwidth * 0.68)
                 .rotationEffect(Angle(degrees: -90))
                 .rotationEffect(vm.angle)
                 .animation(.easeInOut(duration: 0.5), value: vm.angle)
