@@ -15,19 +15,9 @@ struct oqloqApp: App {
             NavigationStack {
                 HomeView()
                     .onAppear {
-                        requestNotificationPermissions()
+                        NotificationCenter.shared.requestNotificationPermissions()
                     }
             }
-        }
-    }
-}
-
-func requestNotificationPermissions() {
-    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-        if granted {
-            print("Permission granted")
-        } else if let error = error {
-            print("Error: \(error.localizedDescription)")
         }
     }
 }

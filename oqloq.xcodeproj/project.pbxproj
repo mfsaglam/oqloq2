@@ -183,7 +183,7 @@
 				E6221E762C6BFE9100A3ED91 /* Engine Module */,
 				12E2B2072C5FC01000B71369 /* Persistence Module */,
 				E6C4902F2C45EA2700B545B9 /* Extensions */,
-				E6C490222C45E7A000B545B9 /* Oqloq Module */,
+				E6C490222C45E7A000B545B9 /* Oqloq App */,
 				E68577BB2C45308000A95283 /* oqloqApp.swift */,
 				E68577BF2C45308100A95283 /* Assets.xcassets */,
 				E68577C12C45308100A95283 /* Preview Content */,
@@ -276,12 +276,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E6C490222C45E7A000B545B9 /* Oqloq Module */ = {
+		E6C490222C45E7A000B545B9 /* Oqloq App */ = {
 			isa = PBXGroup;
 			children = (
 				E6C490322C45EB8600B545B9 /* Screens */,
 			);
-			path = "Oqloq Module";
+			path = "Oqloq App";
 			sourceTree = "<group>";
 		};
 		E6C4902F2C45EA2700B545B9 /* Extensions */ = {

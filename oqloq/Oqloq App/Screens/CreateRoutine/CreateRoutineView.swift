@@ -88,7 +88,19 @@ protocol RoutinePersistenceInteractor {
 class NotificationCenter {
     static let shared = NotificationCenter()
     
-    private init() { }
+    private init() {
+        // singleton pattern
+    }
+    
+    func requestNotificationPermissions() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if granted {
+                print("Permission granted")
+            } else if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
     
     func scheduleDailyNotification(at hour: Int, minute: Int, title: String, body: String, id: String) {
         let content = UNMutableNotificationContent()
