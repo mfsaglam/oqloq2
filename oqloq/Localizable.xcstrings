@@ -1,0 +1,336 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "createRoutine_color" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Color"
+          }
+        }
+      }
+    },
+    "createRoutine_routineColor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Routine color"
+          }
+        }
+      }
+    },
+    "createRoutine_routineTime_endTime" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "End time"
+          }
+        }
+      }
+    },
+    "createRoutine_routineTime_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Routine time"
+          }
+        }
+      }
+    },
+    "createRoutine_save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
+    "createRoutine_startTime" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start time"
+          }
+        }
+      }
+    },
+    "editRoutines_alert_confirmMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to remove all routines? This action cannot be undone."
+          }
+        }
+      }
+    },
+    "editRoutines_alert_confirmTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm Removal"
+          }
+        }
+      }
+    },
+    "editRoutines_alert_removeAllButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove All"
+          }
+        }
+      }
+    },
+    "editRoutines_removeAllButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove All"
+          }
+        }
+      }
+    },
+    "notificationBody_1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do not miss your routines and build your future."
+          }
+        }
+      }
+    },
+    "notificationBody_2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every step you take today is progress toward your goal."
+          }
+        }
+      }
+    },
+    "notificationBody_3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consistency today, success tomorrow."
+          }
+        }
+      }
+    },
+    "notificationBody_4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remember, it’s the small efforts every day that add up to big changes."
+          }
+        }
+      }
+    },
+    "notificationBody_5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don’t let this opportunity pass—make it happen!"
+          }
+        }
+      }
+    },
+    "notificationBody_6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stay committed, stay focused, stay strong."
+          }
+        }
+      }
+    },
+    "notificationBody_7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You’re closer to your goal with every routine."
+          }
+        }
+      }
+    },
+    "notificationBody_8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discipline today means freedom tomorrow."
+          }
+        }
+      }
+    },
+    "notificationBody_9" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your habits shape your destiny—keep pushing forward."
+          }
+        }
+      }
+    },
+    "notificationBody_10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep going—your future self will be proud."
+          }
+        }
+      }
+    },
+    "notificationTitle_1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your scheduled routine starts now."
+          }
+        }
+      }
+    },
+    "notificationTitle_2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time to build your habits!"
+          }
+        }
+      }
+    },
+    "notificationTitle_3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It's routine time—let's get moving!"
+          }
+        }
+      }
+    },
+    "notificationTitle_4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stay on track—your routine is waiting."
+          }
+        }
+      }
+    },
+    "notificationTitle_5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consistency is key—let’s do this!"
+          }
+        }
+      }
+    },
+    "notificationTitle_6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your future self will thank you!"
+          }
+        }
+      }
+    },
+    "notificationTitle_7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Small steps lead to big results."
+          }
+        }
+      }
+    },
+    "notificationTitle_8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make today count!"
+          }
+        }
+      }
+    },
+    "notificationTitle_9" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your journey continues now."
+          }
+        }
+      }
+    },
+    "notificationTitle_10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rise and grind—your routine awaits."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
