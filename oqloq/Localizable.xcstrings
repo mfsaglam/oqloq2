@@ -52,6 +52,12 @@
             "state" : "translated",
             "value" : "色"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "색상"
+          }
         }
       }
     },
@@ -92,6 +98,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "終了時刻"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "종료 시간"
           }
         }
       }
@@ -134,6 +146,12 @@
             "state" : "translated",
             "value" : "ルーチンの色"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "루틴 색상"
+          }
         }
       }
     },
@@ -174,6 +192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "保存"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저장"
           }
         }
       }
@@ -216,6 +240,12 @@
             "state" : "translated",
             "value" : "開始時刻"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시작 시간"
+          }
         }
       }
     },
@@ -256,6 +286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ルーチンの時間"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "루틴 시간"
           }
         }
       }
@@ -298,6 +334,12 @@
             "state" : "translated",
             "value" : "すべてのルーチンを削除してもよろしいですか？この操作は元に戻せません。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 루틴을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다."
+          }
         }
       }
     },
@@ -338,6 +380,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "削除を確認"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "삭제 확인"
           }
         }
       }
@@ -380,6 +428,12 @@
             "state" : "translated",
             "value" : "すべて削除"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모두 삭제"
+          }
         }
       }
     },
@@ -421,6 +475,12 @@
             "state" : "translated",
             "value" : "編集"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모두 삭제"
+          }
         }
       }
     },
@@ -460,6 +520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "編集"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "편집"
           }
         }
       }
@@ -502,6 +568,12 @@
             "state" : "translated",
             "value" : "ルーチンを逃さずに未来を築こう。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "루틴을 놓치지 말고 미래를 만들어 가세요."
+          }
         }
       }
     },
@@ -542,6 +614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今日の一歩一歩が目標に向かう進展です。\n"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘의 모든 걸음이 목표를 향한 진전을 의미합니다."
           }
         }
       }
@@ -584,6 +662,12 @@
             "state" : "translated",
             "value" : "今日の一貫性が明日の成功をもたらします。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘의 일관성이 내일의 성공을 가져옵니다."
+          }
         }
       }
     },
@@ -624,6 +708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "覚えておいてください、小さな努力が積み重なって大きな変化を生み出します。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억하세요, 매일의 작은 노력이 큰 변화를 만들어냅니다."
           }
         }
       }
@@ -666,6 +756,12 @@
             "state" : "translated",
             "value" : "この機会を逃さずに実現させましょう！"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 기회를 놓치지 마세요—실현하세요!"
+          }
         }
       }
     },
@@ -706,6 +802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "コミットメントを持ち、集中し、強くあり続けてください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "헌신을 유지하고, 집중하며, 강하게 유지하세요."
           }
         }
       }
@@ -748,6 +850,12 @@
             "state" : "translated",
             "value" : "ルーチンを重ねることで目標に近づいています。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "매 루틴마다 목표에 더 가까워집니다."
+          }
         }
       }
     },
@@ -788,6 +896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今日の規律が明日の自由を意味します。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘의 규율이 내일의 자유를 의미합니다."
           }
         }
       }
@@ -830,6 +944,12 @@
             "state" : "translated",
             "value" : "習慣が運命を形作ります—前進し続けてください。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "당신의 습관이 운명을 형성합니다—계속 나아가세요."
+          }
         }
       }
     },
@@ -870,6 +990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "続けてください—未来の自分が誇りに思うでしょう。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계속 나아가세요—미래의 당신이 자랑스러워할 것입니다."
           }
         }
       }
@@ -912,6 +1038,12 @@
             "state" : "translated",
             "value" : "予定されたルーチンが今から始まります。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예정된 루틴이 지금 시작됩니다."
+          }
         }
       }
     },
@@ -952,6 +1084,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "習慣を築く時が来ました！"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "습관을 만들 시간입니다!"
           }
         }
       }
@@ -994,6 +1132,12 @@
             "state" : "translated",
             "value" : "ルーチンの時間です—さあ、始めましょう！"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "루틴 시간입니다—시작합시다!"
+          }
         }
       }
     },
@@ -1034,6 +1178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "軌道に乗り続けてください—ルーチンが待っています。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "경로를 유지하세요—루틴이 기다리고 있습니다."
           }
         }
       }
@@ -1076,6 +1226,12 @@
             "state" : "translated",
             "value" : "一貫性が鍵です—やりましょう！"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일관성이 중요합니다—해봅시다!"
+          }
         }
       }
     },
@@ -1116,6 +1272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未来の自分が感謝するでしょう！"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "미래의 당신이 감사할 것입니다!"
           }
         }
       }
@@ -1158,6 +1320,12 @@
             "state" : "translated",
             "value" : "小さなステップが大きな成果をもたらします。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "작은 걸음이 큰 결과를 가져옵니다."
+          }
         }
       }
     },
@@ -1198,6 +1366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今日を大切にしましょう！"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘을 소중히 하세요!"
           }
         }
       }
@@ -1240,6 +1414,12 @@
             "state" : "translated",
             "value" : "あなたの旅は今続いています。"
           }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "당신의 여정은 지금 계속됩니다."
+          }
         }
       }
     },
@@ -1280,6 +1460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "起きて頑張りましょう—あなたのルーチンが待っています。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일어나서 열심히 하세요—당신의 루틴이 기다리고 있습니다."
           }
         }
       }
