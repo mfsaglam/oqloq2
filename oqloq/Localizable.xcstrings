@@ -76,6 +76,12 @@
             "state" : "translated",
             "value" : "สี"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renk"
+          }
         }
       }
     },
@@ -140,6 +146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เวลาสิ้นสุด"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitiş zamanı"
           }
         }
       }
@@ -206,6 +218,12 @@
             "state" : "translated",
             "value" : "สีของกิจวัตร"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rutin rengi"
+          }
         }
       }
     },
@@ -270,6 +288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "บันทึก"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet"
           }
         }
       }
@@ -336,6 +360,12 @@
             "state" : "translated",
             "value" : "เวลาเริ่มต้น"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlangıç zamanı"
+          }
         }
       }
     },
@@ -400,6 +430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เวลาของกิจวัตร"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rutin zamanı"
           }
         }
       }
@@ -466,6 +502,12 @@
             "state" : "translated",
             "value" : "คุณแน่ใจหรือว่าต้องการลบกิจวัตรทั้งหมด? การกระทำนี้ไม่สามารถย้อนกลับได้"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm rutinleri silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+          }
         }
       }
     },
@@ -530,6 +572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ยืนยันการลบ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silmeyi Onayla"
           }
         }
       }
@@ -596,6 +644,12 @@
             "state" : "translated",
             "value" : "ลบทั้งหมด"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü Kaldır"
+          }
         }
       }
     },
@@ -661,6 +715,12 @@
             "state" : "translated",
             "value" : "ลบทั้งหมด"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü Kaldır"
+          }
         }
       }
     },
@@ -724,6 +784,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แก้ไข"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzenle"
           }
         }
       }
@@ -790,6 +856,12 @@
             "state" : "translated",
             "value" : "อย่าพลาดกิจวัตรของคุณและสร้างอนาคตของคุณ"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rutinlerini kaçırma ve geleceğini inşa et."
+          }
         }
       }
     },
@@ -854,6 +926,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ทุกก้าวที่คุณก้าวในวันนี้คือความก้าวหน้าไปสู่เป้าหมายของคุณ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün attığın her adım, hedefine doğru bir ilerlemedir."
           }
         }
       }
@@ -920,6 +998,12 @@
             "state" : "translated",
             "value" : "ความสม่ำเสมอในวันนี้ ความสำเร็จในวันพรุ่งนี้"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün tutarlılık, yarın başarı getirir."
+          }
         }
       }
     },
@@ -984,6 +1068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "จงจำไว้ว่าความพยายามเล็กๆ ทุกวันจะนำไปสู่การเปลี่ยนแปลงครั้งใหญ่"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unutma, her gün yapılan küçük çabalar büyük değişimlere yol açar."
           }
         }
       }
@@ -1050,6 +1140,12 @@
             "state" : "translated",
             "value" : "อย่าปล่อยให้โอกาสนี้หลุดลอยไป—ทำให้มันเกิดขึ้น!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu fırsatı kaçırma—gerçekleştir!"
+          }
         }
       }
     },
@@ -1114,6 +1210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รักษาความมุ่งมั่น รักษาความมุ่งมั่นและความแข็งแกร่ง"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kararlı kal, odaklan, güçlü ol."
           }
         }
       }
@@ -1180,6 +1282,12 @@
             "state" : "translated",
             "value" : "คุณใกล้เป้าหมายของคุณมากขึ้นด้วยกิจวัตรแต่ละอย่าง"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her rutinle hedefine biraz daha yaklaşıyorsun."
+          }
         }
       }
     },
@@ -1244,6 +1352,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วินัยในวันนี้หมายถึงเสรีภาพในวันพรุ่งนี้"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün disiplin, yarın özgürlük demektir."
           }
         }
       }
@@ -1310,6 +1424,12 @@
             "state" : "translated",
             "value" : "นิสัยของคุณกำหนดชะตากรรมของคุณ—เดินหน้าต่อไป"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışkanlıkların kaderini şekillendirir—ilerlemeye devam et."
+          }
         }
       }
     },
@@ -1374,6 +1494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ดำเนินต่อไป—ตัวคุณในอนาคตจะภูมิใจในตัวคุณ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devam et—gelecekteki halin gurur duyacak."
           }
         }
       }
@@ -1440,6 +1566,12 @@
             "state" : "translated",
             "value" : "กิจวัตรที่กำหนดไว้ของคุณเริ่มต้นตอนนี้"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planlı rutinin şimdi başlıyor."
+          }
         }
       }
     },
@@ -1504,6 +1636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เวลาสร้างนิสัยของคุณ!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alışkanlıklarını oluşturma zamanı!"
           }
         }
       }
@@ -1570,6 +1708,12 @@
             "state" : "translated",
             "value" : "ถึงเวลาทำกิจวัตร—มาเริ่มกันเถอะ!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rutin zamanı—hadi başlayalım!"
+          }
         }
       }
     },
@@ -1634,6 +1778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อยู่ในเส้นทาง—กิจวัตรของคุณรออยู่"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yolda kal—rutinin bekliyor."
           }
         }
       }
@@ -1700,6 +1850,12 @@
             "state" : "translated",
             "value" : "ความสม่ำเสมอคือกุญแจ—มาทำมันให้สำเร็จ!"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutarlılık önemlidir—hadi başlayalım!"
+          }
         }
       }
     },
@@ -1764,6 +1920,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ตัวคุณในอนาคตจะขอบคุณคุณ!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gelecekteki halin sana teşekkür edecek!"
           }
         }
       }
@@ -1830,6 +1992,12 @@
             "state" : "translated",
             "value" : "ก้าวเล็กๆ นำไปสู่ผลลัพธ์ที่ใหญ่โต"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Küçük adımlar büyük sonuçlara yol açar."
+          }
         }
       }
     },
@@ -1894,6 +2062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ทำให้วันนี้มีค่า!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünü değerlendir!"
           }
         }
       }
@@ -1960,6 +2134,12 @@
             "state" : "translated",
             "value" : "การเดินทางของคุณยังคงดำเนินต่อไป"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yolculuğun şimdi devam ediyor."
+          }
         }
       }
     },
@@ -2024,6 +2204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ลุกขึ้นและทำงาน—กิจวัตรของคุณรออยู่"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalk ve çalış—rutinin bekliyor."
           }
         }
       }
