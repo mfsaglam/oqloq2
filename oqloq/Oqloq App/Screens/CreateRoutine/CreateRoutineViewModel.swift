@@ -19,7 +19,7 @@ class CreateRoutineViewModel: ObservableObject {
         do {
             let lastEndTime = try interactor.loadRoutines().last?.endTime
             startTime = lastEndTime ?? Date()
-            endTime = lastEndTime ?? Date()
+            endTime = lastEndTime?.addingTimeInterval(3600) ?? Date().addingTimeInterval(3600)
         } catch {
             print(error)
         }
