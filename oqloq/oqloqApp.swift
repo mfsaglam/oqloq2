@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 @main
 struct oqloqApp: App {
@@ -13,7 +14,20 @@ struct oqloqApp: App {
         WindowGroup {
             NavigationStack {
                 HomeView()
+                    .onAppear {
+                        requestNotificationPermissions()
+                    }
             }
+        }
+    }
+}
+
+func requestNotificationPermissions() {
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+        if granted {
+            print("Permission granted")
+        } else if let error = error {
+            print("Error: \(error.localizedDescription)")
         }
     }
 }
