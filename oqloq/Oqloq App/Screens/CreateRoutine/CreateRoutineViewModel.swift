@@ -16,6 +16,13 @@ class CreateRoutineViewModel: ObservableObject {
     
     init(interactor: RoutinePersistenceInteractor) {
         self.interactor = interactor
+        do {
+            let lastEndTime = try interactor.loadRoutines().last?.endTime
+            startTime = lastEndTime ?? Date()
+            endTime = lastEndTime ?? Date()
+        } catch {
+            print(error)
+        }
     }
     
     private func makeRoutineDTO() -> RoutineDTO? {
