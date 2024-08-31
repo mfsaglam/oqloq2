@@ -41,6 +41,12 @@
             "value" : "Color"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -128,6 +134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora de finalización"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure de fin"
           }
         },
         "hi" : {
@@ -219,6 +231,12 @@
             "value" : "Color de rutina"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur de la routine"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -306,6 +324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guardar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer"
           }
         },
         "hi" : {
@@ -397,6 +421,12 @@
             "value" : "Hora de inicio"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure de début"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -484,6 +514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hora de rutina"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps de la routine"
           }
         },
         "hi" : {
@@ -575,6 +611,12 @@
             "value" : "¿Estás seguro de que quieres eliminar todas las rutinas? Esta acción no se puede deshacer."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Êtes-vous sûr de vouloir supprimer toutes les routines ? Cette action est irréversible."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -662,6 +704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Confirmar eliminación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmer la suppression"
           }
         },
         "hi" : {
@@ -753,6 +801,12 @@
             "value" : "Eliminar todo"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout supprimer"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -842,6 +896,12 @@
             "value" : "Eliminar todo"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout supprimer"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -928,6 +988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Editar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier"
           }
         },
         "hi" : {
@@ -1019,6 +1085,12 @@
             "value" : "No te pierdas tus rutinas y construye tu futuro."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne manquez pas vos routines et construisez votre avenir."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1106,6 +1178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cada paso que das hoy es un avance hacia tu meta."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque pas que vous faites aujourd'hui est un progrès vers votre objectif."
           }
         },
         "hi" : {
@@ -1197,6 +1275,12 @@
             "value" : "Consistencia hoy, éxito mañana."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La constance aujourd'hui, le succès demain."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1284,6 +1368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recuerda, son los pequeños esfuerzos cada día los que suman grandes cambios."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappelez-vous, ce sont les petits efforts quotidiens qui s'additionnent pour créer de grands changements."
           }
         },
         "hi" : {
@@ -1375,6 +1465,12 @@
             "value" : "¡No dejes pasar esta oportunidad—haz que suceda!"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne laissez pas passer cette opportunité—faites-en une réalité !"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1462,6 +1558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mantente comprometido, enfocado y fuerte."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restez engagé, restez concentré, restez fort."
           }
         },
         "hi" : {
@@ -1553,6 +1655,12 @@
             "value" : "Estás más cerca de tu meta con cada rutina."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous vous rapprochez de votre objectif avec chaque routine."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1640,6 +1748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disciplina hoy significa libertad mañana."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La discipline aujourd'hui signifie la liberté demain."
           }
         },
         "hi" : {
@@ -1731,6 +1845,12 @@
             "value" : "Tus hábitos moldean tu destino—sigue adelante."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vos habitudes façonnent votre destin—continuez à avancer."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1818,6 +1938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sigue adelante—tu futuro yo estará orgulloso."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuez—votre futur vous sera fier."
           }
         },
         "hi" : {
@@ -1909,6 +2035,12 @@
             "value" : "Tu rutina programada comienza ahora."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre routine programmée commence maintenant."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1996,6 +2128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Es hora de construir tus hábitos!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il est temps de construire vos habitudes !"
           }
         },
         "hi" : {
@@ -2087,6 +2225,12 @@
             "value" : "Es hora de rutina—¡vamos a movernos!"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C'est l'heure de la routine—en avant !"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2174,6 +2318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mantente en el camino—tu rutina te espera."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restez sur la bonne voie—votre routine vous attend."
           }
         },
         "hi" : {
@@ -2265,6 +2415,12 @@
             "value" : "La consistencia es clave—¡hagámoslo!"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La constance est la clé—faisons-le !"
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2352,6 +2508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Tu futuro yo te lo agradecerá!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre futur vous vous remerciera !"
           }
         },
         "hi" : {
@@ -2443,6 +2605,12 @@
             "value" : "Los pequeños pasos llevan a grandes resultados."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les petits pas mènent à de grands résultats."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2530,6 +2698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Haz que hoy cuente!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faites que ce jour compte !"
           }
         },
         "hi" : {
@@ -2621,6 +2795,12 @@
             "value" : "Tu viaje continúa ahora."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre voyage continue maintenant."
+          }
+        },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2708,6 +2888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Despierta y trabaja—tu rutina te espera."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Levez-vous et travaillez dur—votre routine vous attend."
           }
         },
         "hi" : {
