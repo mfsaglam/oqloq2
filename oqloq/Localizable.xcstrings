@@ -1,32 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : ""
-          }
-        }
-      }
-    },
-    "%@ - %@" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ - %2$@"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ - %2$@"
-          }
-        }
-      }
-    },
     "createRoutine_color" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -34,6 +8,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اللون"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farbe"
           }
         },
         "en" : {
@@ -53,6 +33,12 @@
             "value" : "وقت النهاية"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endzeit"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -68,6 +54,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "لون الروتين"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Routinenfarbe"
           }
         },
         "en" : {
@@ -87,6 +79,12 @@
             "value" : "حفظ"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speichern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -102,6 +100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "وقت البدء"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startzeit"
           }
         },
         "en" : {
@@ -121,6 +125,12 @@
             "value" : "وقت الروتين"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Routinenzeit"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -136,6 +146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "هل أنت متأكد أنك تريد إزالة جميع الروتينات؟ لا يمكن التراجع عن هذا الإجراء."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bist du sicher, dass du alle Routinen entfernen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
           }
         },
         "en" : {
@@ -155,6 +171,12 @@
             "value" : "تأكيد الإزالة"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entfernung bestätigen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -170,6 +192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إزالة الكل"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle entfernen"
           }
         },
         "en" : {
@@ -189,6 +217,12 @@
             "value" : "إزالة الكل"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle entfernen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -203,6 +237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تعديل"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbeiten"
           }
         },
         "en" : {
@@ -222,6 +262,12 @@
             "value" : "لا تفوت روتينك وابنِ مستقبلك."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verpasse deine Routinen nicht und baue deine Zukunft auf."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -237,6 +283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كل خطوة تخطوها اليوم هي تقدم نحو هدفك."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeder Schritt, den du heute machst, ist Fortschritt in Richtung deines Ziels."
           }
         },
         "en" : {
@@ -256,6 +308,12 @@
             "value" : "الاستمرارية اليوم، النجاح غدًا."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konsistenz heute, Erfolg morgen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -271,6 +329,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تذكر، أن الجهود الصغيرة اليومية هي التي تؤدي إلى تغييرات كبيرة."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denk daran, es sind die kleinen Anstrengungen jeden Tag, die zu großen Veränderungen führen."
           }
         },
         "en" : {
@@ -290,6 +354,12 @@
             "value" : "لا تدع هذه الفرصة تفوتك—اجعلها تحدث!"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lass diese Gelegenheit nicht verstreichen—mach es möglich!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -305,6 +375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ابقَ ملتزمًا، وركز، وكن قويًا."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bleib engagiert, bleib fokussiert, bleib stark."
           }
         },
         "en" : {
@@ -324,6 +400,12 @@
             "value" : "أنت أقرب إلى هدفك مع كل روتين."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit jeder Routine kommst du deinem Ziel näher."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -339,6 +421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الانضباط اليوم يعني الحرية غدًا."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disziplin heute bedeutet Freiheit morgen."
           }
         },
         "en" : {
@@ -358,6 +446,12 @@
             "value" : "عاداتك تشكل مصيرك—استمر في المضي قدمًا."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Gewohnheiten prägen dein Schicksal—mach weiter."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -373,6 +467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "واصل التقدم—سوف يفتخر بك مستقبلك."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mach weiter—dein zukünftiges Ich wird stolz sein."
           }
         },
         "en" : {
@@ -392,6 +492,12 @@
             "value" : "يبدأ روتينك المجدول الآن."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein geplanter Ablauf beginnt jetzt."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -407,6 +513,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حان الوقت لبناء عاداتك!"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeit, deine Gewohnheiten aufzubauen!"
           }
         },
         "en" : {
@@ -426,6 +538,12 @@
             "value" : "حان وقت الروتين—لنبدأ التحرك!"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es ist Routine-Zeit—lass uns loslegen!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -441,6 +559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ابقَ على المسار—روتينك في انتظارك."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bleib auf Kurs—deine Routine wartet."
           }
         },
         "en" : {
@@ -460,6 +584,12 @@
             "value" : "الاستمرارية هي المفتاح—لنقم بذلك!"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konsistenz ist der Schlüssel—lass uns das machen!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -475,6 +605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مستقبلك سوف يشكرك!"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein zukünftiges Ich wird dir danken!"
           }
         },
         "en" : {
@@ -494,6 +630,12 @@
             "value" : "الخطوات الصغيرة تؤدي إلى نتائج كبيرة."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kleine Schritte führen zu großen Ergebnissen.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -509,6 +651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اجعل اليوم مهمًا!"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mach den heutigen Tag wertvoll!"
           }
         },
         "en" : {
@@ -528,6 +676,12 @@
             "value" : "رحلتك تستمر الآن."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Reise geht jetzt weiter."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -545,6 +699,12 @@
             "value" : "استيقظ وابدأ العمل—روتينك في انتظارك."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Steh auf und gib Gas—deine Routine wartet."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -556,6 +716,12 @@
     "oqloq" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "oqloq"
+          }
+        },
+        "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "oqloq"
