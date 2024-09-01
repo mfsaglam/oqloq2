@@ -302,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				1262E9602C8342B200D730E3 /* NotificationCenter.swift */,
+				E689A7052C67AF0000C45E3E /* Components */,
 				E6C490322C45EB8600B545B9 /* Screens */,
 			);
 			path = "Oqloq App";
@@ -323,7 +324,6 @@
 			children = (
 				E6221E772C6C033500A3ED91 /* EditRoutines */,
 				E689A7062C67AF1B00C45E3E /* CreateRoutine */,
-				E689A7052C67AF0000C45E3E /* Components */,
 				E689A7042C67AEE200C45E3E /* Routine */,
 				E689A7032C67AEB500C45E3E /* Home */,
 			);
