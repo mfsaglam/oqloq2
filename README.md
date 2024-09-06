@@ -1,3 +1,5 @@
+![assets/logo.png](https://github.com/mfsaglam/oqloq2/blob/main/image_resources/appicon.png)
+
 # Oqloq - Time-Blocking Clock App
 
 Oqloq is a unique productivity app designed to help you master your time through time-blocking techniques. The app features a 24-hour clock that allows you to visualize and organize your daily routines, study sessions, work tasks, and more. With customizable color-coded routines and motivational reminders, Oqloq makes it easy to stay on track and achieve your goals.
