@@ -31,10 +31,7 @@ struct HomeView: View {
                 Button(action: {
                     isSheetPresented.toggle()
                 }) {
-                    Label(
-                        title: { Text("home_edit") },
-                        icon: { }
-                    )
+                    Text("home_edit")
                 }
             }
             ToolbarItem(placement: .topBarTrailing) {
