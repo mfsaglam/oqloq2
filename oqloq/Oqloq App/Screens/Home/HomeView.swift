@@ -54,6 +54,9 @@ struct HomeView: View {
         .onAppear {
             vm.getData()
         }
+        .onChange(of: isSheetPresented, perform: { value in
+            vm.getData()
+        })
     }
 }
 
