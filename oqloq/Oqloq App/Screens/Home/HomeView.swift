@@ -11,7 +11,7 @@ struct HomeView: View {
     @StateObject var vm = HomeViewModel(interactor: RealmPersistenceInteractor())
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 Color.wallpaper
                     .ignoresSafeArea()
@@ -22,8 +22,8 @@ struct HomeView: View {
                 }
             }
         }
-        .toolbarTitleDisplayMode(.inline)
         .navigationTitle("oqloq")
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 NavigationLink {
@@ -53,7 +53,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    NavigationStack {
+    NavigationView {
         HomeView()
     }
 }

@@ -31,9 +31,15 @@ struct OqloqView: View {
             ForEach(routines) { routine in
                 RoutineView(routine: routine)
             }
-            
+
             Circle()
-                .foregroundStyle(.solidBack.gradient)
+                .fill(
+                    LinearGradient(
+                        colors: [.solidBack, .gray],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
                 .frame(height: screenwidth * 0.8)
                 .rotationEffect(.degrees(-30))
                 .padding(.vertical)

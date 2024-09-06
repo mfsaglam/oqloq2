@@ -12,7 +12,7 @@ import UserNotifications
 struct oqloqApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
+            NavigationView {
                 HomeView()
                     .onAppear {
                         NotificationCenter.shared.requestNotificationPermissions()

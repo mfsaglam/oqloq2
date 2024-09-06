@@ -40,7 +40,7 @@ struct CreateRoutineView: View {
 }
 
 #Preview {
-    NavigationStack {
+    NavigationView {
         CreateRoutineView()
     }
 }
