@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var vm = HomeViewModel(interactor: RealmPersistenceInteractor())
+
+    @State private var isSheetPresented = false
     
     var body: some View {
         NavigationView {
@@ -26,9 +28,9 @@ struct HomeView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                NavigationLink {
-                    EditRoutinesView()
-                } label: {
+                Button(action: {
+                    isSheetPresented.toggle()
+                }) {
                     Label(
                         title: { Text("home_edit") },
                         icon: { }
@@ -45,6 +47,9 @@ struct HomeView: View {
                     )
                 }
             }
+        }
+        .sheet(isPresented: $isSheetPresented) {
+            EditRoutinesView()
         }
         .onAppear {
             vm.getData()
