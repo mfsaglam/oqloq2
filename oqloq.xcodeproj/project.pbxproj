@@ -149,9 +149,7 @@
 		12E2B2072C5FC01000B71369 /* Persistence Module */ = {
 			isa = PBXGroup;
 			children = (
-				1262E9622C83471400D730E3 /* RoutineService.swift */,
 				E689A7082C67AF6100C45E3E /* RealmPersistenceService */,
-				E689A7072C67AF5700C45E3E /* Model */,
 			);
 			path = "Persistence Module";
 			sourceTree = "<group>";
@@ -301,7 +299,9 @@
 		E6C490222C45E7A000B545B9 /* Oqloq App */ = {
 			isa = PBXGroup;
 			children = (
+				1262E9622C83471400D730E3 /* RoutineService.swift */,
 				1262E9602C8342B200D730E3 /* NotificationCenter.swift */,
+				E689A7072C67AF5700C45E3E /* Model */,
 				E689A7052C67AF0000C45E3E /* Components */,
 				E6C490322C45EB8600B545B9 /* Screens */,
 			);
