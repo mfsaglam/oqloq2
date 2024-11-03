@@ -26,7 +26,7 @@ extension RoutineModel {
     }
 }
 
-class RealmPersistenceInteractor: RoutinePersistenceInteractor {
+class RealmRoutineService: RoutineService {
     let realm = try! Realm()
 
     func saveRoutine(routine: RoutineDTO) throws {

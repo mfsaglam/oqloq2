@@ -10,10 +10,10 @@ import Foundation
 class HomeViewModel: ObservableObject {
     @Published var presentableRoutines: [PresentableRoutine] = []
     
-    private let interactor: RoutinePersistenceInteractor
+    private let interactor: RoutineService
     var data: [RoutineDTO] = []
     
-    init(interactor: RoutinePersistenceInteractor) {
+    init(interactor: RoutineService) {
         self.interactor = interactor
     }
     

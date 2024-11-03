@@ -10,9 +10,9 @@ import Foundation
 class EditRoutinesViewModel: ObservableObject {
     @Published var routines: [RoutineDTO] = []
     
-    private let interactor: RoutinePersistenceInteractor
+    private let interactor: RoutineService
     
-    init(interactor: RoutinePersistenceInteractor) {
+    init(interactor: RoutineService) {
         self.interactor = interactor
     }
     

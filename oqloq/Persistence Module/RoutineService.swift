@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RoutinePersistenceInteractor {
+protocol RoutineService {
     func saveRoutine(routine: RoutineDTO) throws
     func loadRoutines() throws -> [RoutineDTO]
     func deleteRoutine(_ routine: RoutineDTO) throws

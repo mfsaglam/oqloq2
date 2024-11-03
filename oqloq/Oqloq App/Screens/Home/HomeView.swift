@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var vm = HomeViewModel(interactor: RealmPersistenceInteractor())
+    @StateObject var vm = HomeViewModel(interactor: RealmRoutineService())
 
     @State private var isSheetPresented = false
     

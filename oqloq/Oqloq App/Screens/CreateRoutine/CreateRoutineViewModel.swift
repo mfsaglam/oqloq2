@@ -12,9 +12,9 @@ class CreateRoutineViewModel: ObservableObject {
     @Published var endTime = Date()
     @Published var routineColor = Color.random
     
-    private var interactor: RoutinePersistenceInteractor
+    private var interactor: RoutineService
     
-    init(interactor: RoutinePersistenceInteractor) {
+    init(interactor: RoutineService) {
         self.interactor = interactor
         do {
             let lastEndTime = try interactor.loadRoutines().last?.endTime
