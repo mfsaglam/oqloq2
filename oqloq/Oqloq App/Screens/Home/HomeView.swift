@@ -18,10 +18,9 @@ struct HomeView: View {
                 Color.wallpaper
                     .ignoresSafeArea()
                 
-                VStack {
-                    OqloqView(routines: vm.presentableRoutines)
-                        .padding()
-                }
+                OqloqView(routines: vm.presentableRoutines)
+                    .padding()
+                    .padding(.bottom, 100)
             }
         }
         .navigationTitle("oqloq")
