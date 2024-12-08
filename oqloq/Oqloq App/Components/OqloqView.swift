@@ -32,17 +32,27 @@ struct OqloqView: View {
                 RoutineView(routine: routine)
             }
 
-            Circle()
-                .fill(
-                    LinearGradient(
-                        colors: [.solidBack, .gray],
-                        startPoint: .top,
-                        endPoint: .bottom
+            ZStack {
+                Circle()
+                    .fill(.solidBack)
+                    .frame(height: screenwidth * 0.8)
+                    .rotationEffect(.degrees(-30))
+                    .padding(.vertical)
+                
+                Circle()
+                    .fill(
+                        LinearGradient(
+                            colors: [.white.opacity(0.5), .black.opacity(0.2)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
                     )
-                )
-                .frame(height: screenwidth * 0.8)
-                .rotationEffect(.degrees(-30))
-                .padding(.vertical)
+                    .blendMode(.multiply)
+                    .frame(height: screenwidth * 0.8)
+                    .rotationEffect(.degrees(-30))
+                    .padding(.vertical)
+                
+            }
             
             Circle()
                 .trim(from: 0.0, to: 0.002)
