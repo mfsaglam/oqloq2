@@ -68,5 +68,7 @@ struct OqloqView: View {
 }
 
 #Preview {
-    OqloqView(vm: OqloqViewModel(engine: ClockEngine()), routines: [])
+    OqloqView(vm: OqloqViewModel(engine: ClockEngine()), routines: [
+        .init(start: 0.9, end: 0.3, color: .red)
+    ])
 }
