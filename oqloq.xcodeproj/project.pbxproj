@@ -111,6 +111,7 @@
 		126E593D2D062577005BC718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		126E593F2D062577005BC718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126E59462D062583005BC718 /* oqloqWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = oqloqWidgetExtension.entitlements; sourceTree = "<group>"; };
+		1291C3E62D0DDFED00139E8F /* oqloq.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = oqloq.entitlements; sourceTree = "<group>"; };
 		12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineView.swift; sourceTree = "<group>"; };
 		12E2B2082C5FC02800B71369 /* RoutineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -239,6 +240,7 @@
 		E68577BA2C45308000A95283 /* oqloq */ = {
 			isa = PBXGroup;
 			children = (
+				1291C3E62D0DDFED00139E8F /* oqloq.entitlements */,
 				E6221E762C6BFE9100A3ED91 /* Engine Module */,
 				12E2B2072C5FC01000B71369 /* Persistence Module */,
 				E6C4902F2C45EA2700B545B9 /* Extensions */,
@@ -822,6 +824,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = oqloq/oqloq.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"oqloq/Preview Content\"";
@@ -852,6 +855,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = oqloq/oqloq.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"oqloq/Preview Content\"";

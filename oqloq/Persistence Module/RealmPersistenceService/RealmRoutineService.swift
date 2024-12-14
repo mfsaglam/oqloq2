@@ -53,3 +53,42 @@ class RealmRoutineService: RoutineService {
         }
     }
 }
+
+// data migration helpers
+
+func getSharedRealmConfig() -> Realm.Configuration {
+    guard let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.mfsaglam.routineClock") else {
+        fatalError("Unable to find app group container")
+    }
+    let realmURL = containerURL.appendingPathComponent("default.realm")
+    var config = Realm.Configuration()
+    config.fileURL = realmURL
+    return config
+}
+
+func migrateRealmToSharedContainer() {
+    let defaultRealmURL = Realm.Configuration.defaultConfiguration.fileURL!
+    guard let sharedContainerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.mfsaglam.routineClock") else {
+        fatalError("Unable to find app group container")
+    }
+    let sharedRealmURL = sharedContainerURL.appendingPathComponent("default.realm")
+    let fileManager = FileManager.default
+
+    // Check if the shared Realm already exists
+    if fileManager.fileExists(atPath: sharedRealmURL.path) {
+        print("Shared Realm already exists, no migration needed.")
+        return
+    }
+
+    do {
+        // Move the Realm file to the shared container
+        try fileManager.moveItem(at: defaultRealmURL, to: sharedRealmURL)
+        print("Realm migrated successfully to shared container.")
+    } catch {
+        print("Error migrating Realm: \(error)")
+    }
+}
+
+func setSharedRealmAsDefault() {
+    Realm.Configuration.defaultConfiguration = getSharedRealmConfig()
+}
