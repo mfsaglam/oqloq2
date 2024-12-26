@@ -9,33 +9,37 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: TimelineProvider {
+    let service = RealmRoutineService()
+
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+        SimpleEntry(date: Date(), presentableRoutines: [])
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
-        completion(entry)
+        do {
+            let presentableRoutines = try service.loadRoutines().map { $0.presentable }
+            let entry = SimpleEntry(date: Date(), presentableRoutines: presentableRoutines)
+            completion(entry)
+        } catch {
+            print("Failed to fetch routines from store.")
+        }
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
+        do {
+            let presentableRoutines = try service.loadRoutines().map { $0.presentable }
+            let entry = SimpleEntry(date: Date(), presentableRoutines: presentableRoutines)
+            let timeline = Timeline(entries: [entry], policy: .atEnd)
+            completion(timeline)
+        } catch {
+            print("Failed to fetch routines from store.")
         }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let presentableRoutines: [PresentableRoutine]
 }
 
 struct oqloqWidgetEntryView : View {
@@ -54,6 +58,10 @@ struct oqloqWidgetEntryView : View {
                 )
                 .blur(radius: 1)
                 .frame(height: 300)
+            
+            ForEach(entry.presentableRoutines) { routine in
+                RoutineView(routine: routine)
+            }
             
             ZStack {
                 Circle()
@@ -101,14 +109,14 @@ struct oqloqWidget: Widget {
                     .background()
             }
         }
-        .configurationDisplayName("My Widget")
+        .configurationDisplayName("oqloq Widget")
         .supportedFamilies([.systemLarge, .systemExtraLarge])
-        .description("This is an example widget.")
+        .description("Track your routines.")
     }
 }
 
 #Preview(as: .systemLarge) {
     oqloqWidget()
 } timeline: {
-    SimpleEntry(date: .now)
+    SimpleEntry(date: .now, presentableRoutines: [.init(start: 0.1, end: 0.6, color: .red)])
 }
