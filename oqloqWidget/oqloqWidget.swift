@@ -40,9 +40,50 @@ struct SimpleEntry: TimelineEntry {
 
 struct oqloqWidgetEntryView : View {
     var entry: Provider.Entry
+    
+    @StateObject var vm = OqloqViewModel(
+        engine: ClockEngine()
+    )
 
     var body: some View {
-        OqloqView(routines: [.init(start: 0, end: 0.3, color: .red)])
+        ZStack {
+            Circle()
+                .stroke(lineWidth: 3)
+                .foregroundStyle(
+                    .solidBack.opacity(0.8)
+                )
+                .blur(radius: 1)
+                .frame(height: 300)
+            
+            ZStack {
+                Circle()
+                    .fill(.solidBack)
+                    .frame(height: 270)
+                    .rotationEffect(.degrees(-30))
+                    .padding(.vertical)
+                
+                Circle()
+                    .fill(
+                        LinearGradient(
+                            colors: [.white.opacity(0.5), .black.opacity(0.2)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .blendMode(.multiply)
+                    .frame(height: 270)
+                    .rotationEffect(.degrees(-30))
+                    .padding(.vertical)
+                
+                Circle()
+                    .trim(from: 0.0, to: 0.002)
+                    .stroke(.primary, lineWidth: 40)
+                    .frame(height: 230)
+                    .rotationEffect(Angle(degrees: -90))
+                    .rotationEffect(vm.angle)
+            }
+        }
+        .shadow(color: .black.opacity(0.3), radius: 30, x: 30, y: 30)
     }
 }
 
