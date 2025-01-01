@@ -27,7 +27,7 @@ extension RoutineModel {
 }
 
 class RealmRoutineService: RoutineService {
-    let realm = try! Realm()
+    let realm = try! Realm(configuration: getSharedRealmConfig())
 
     func saveRoutine(routine: RoutineDTO) throws {
         let model = RoutineModel()
