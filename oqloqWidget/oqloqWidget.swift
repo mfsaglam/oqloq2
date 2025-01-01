@@ -51,6 +51,7 @@ struct oqloqWidgetEntryView : View {
 
     var body: some View {
         ZStack {
+            // routines
             Circle()
                 .stroke(lineWidth: 3)
                 .foregroundStyle(
@@ -63,7 +64,9 @@ struct oqloqWidgetEntryView : View {
                 RoutineView(routine: routine)
             }
             
+            // oqloq
             ZStack {
+                // solid clock
                 Circle()
                     .fill(.solidBack)
                     .frame(height: 270)
@@ -73,16 +76,16 @@ struct oqloqWidgetEntryView : View {
                 Circle()
                     .fill(
                         LinearGradient(
-                            colors: [.white.opacity(0.5), .black.opacity(0.2)],
+                            colors: [.white.opacity(0.05), .black.opacity(0.2)],
                             startPoint: .top,
                             endPoint: .bottom
                         )
                     )
-                    .blendMode(.multiply)
                     .frame(height: 270)
                     .rotationEffect(.degrees(-30))
                     .padding(.vertical)
                 
+                // indicator
                 Circle()
                     .trim(from: 0.0, to: 0.002)
                     .stroke(.primary, lineWidth: 40)
@@ -102,7 +105,7 @@ struct oqloqWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
                 oqloqWidgetEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
+                    .containerBackground(for: .widget) { Color.wallpaper }
             } else {
                 oqloqWidgetEntryView(entry: entry)
                     .padding()
@@ -118,5 +121,5 @@ struct oqloqWidget: Widget {
 #Preview(as: .systemLarge) {
     oqloqWidget()
 } timeline: {
-    SimpleEntry(date: .now, presentableRoutines: [.init(start: 0.1, end: 0.6, color: .red)])
+    SimpleEntry(date: .now, presentableRoutines: [.init(start: 0.1, end: 0.6, color: .green)])
 }

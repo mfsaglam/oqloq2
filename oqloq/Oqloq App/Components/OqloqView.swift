@@ -55,12 +55,11 @@ struct OqloqView: View {
             Circle()
                 .fill(
                     LinearGradient(
-                        colors: [.white.opacity(0.5), .black.opacity(0.2)],
+                        colors: [.white.opacity(0.05), .black.opacity(0.2)],
                         startPoint: .top,
                         endPoint: .bottom
                     )
                 )
-                .blendMode(.multiply)
                 .frame(height: screenwidth * 0.8)
                 .rotationEffect(.degrees(-30))
                 .padding(.vertical)
