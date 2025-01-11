@@ -48,7 +48,7 @@ struct OqloqView: View {
         ZStack {
             Circle()
                 .fill(.solidBack)
-                .frame(height: screenwidth * 0.8)
+                .frame(height: screenwidth * 0.75)
                 .rotationEffect(.degrees(-30))
                 .padding(.vertical)
             
@@ -60,7 +60,7 @@ struct OqloqView: View {
                         endPoint: .bottom
                     )
                 )
-                .frame(height: screenwidth * 0.8)
+                .frame(height: screenwidth * 0.75)
                 .rotationEffect(.degrees(-30))
                 .padding(.vertical)
         }
@@ -70,7 +70,7 @@ struct OqloqView: View {
         Circle()
             .trim(from: 0.0, to: 0.002)
             .stroke(.primary, lineWidth: screenwidth * 0.12)
-            .frame(height: screenwidth * 0.68)
+            .frame(height: screenwidth * 0.63)
             .rotationEffect(Angle(degrees: -90))
             .rotationEffect(vm.angle)
             .animation(.easeInOut(duration: 0.5), value: vm.angle)

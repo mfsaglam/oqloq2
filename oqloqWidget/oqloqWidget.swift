@@ -58,7 +58,7 @@ struct oqloqWidgetEntryView : View {
                     .solidBack.opacity(0.8)
                 )
                 .blur(radius: 1)
-                .frame(height: 300)
+                .frame(height: 310)
             
             ForEach(entry.presentableRoutines) { routine in
                 RoutineView(routine: routine)
@@ -69,7 +69,7 @@ struct oqloqWidgetEntryView : View {
                 // solid clock
                 Circle()
                     .fill(.solidBack)
-                    .frame(height: 270)
+                    .frame(height: 260)
                     .rotationEffect(.degrees(-30))
                     .padding(.vertical)
                 
@@ -81,7 +81,7 @@ struct oqloqWidgetEntryView : View {
                             endPoint: .bottom
                         )
                     )
-                    .frame(height: 270)
+                    .frame(height: 260)
                     .rotationEffect(.degrees(-30))
                     .padding(.vertical)
                 
@@ -89,7 +89,7 @@ struct oqloqWidgetEntryView : View {
                 Circle()
                     .trim(from: 0.0, to: 0.002)
                     .stroke(.primary, lineWidth: 40)
-                    .frame(height: 230)
+                    .frame(height: 220)
                     .rotationEffect(Angle(degrees: -90))
                     .rotationEffect(vm.angle)
             }
