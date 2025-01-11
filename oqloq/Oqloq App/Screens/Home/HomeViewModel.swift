@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WidgetKit
 
 class HomeViewModel: ObservableObject {
     @Published var presentableRoutines: [PresentableRoutine] = []
@@ -26,5 +27,6 @@ class HomeViewModel: ObservableObject {
         }
         
         self.presentableRoutines = data.map { $0.presentable }
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
