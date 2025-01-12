@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1257CE3A2D1DFE8F00F159D9 /* RealmRoutineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689A7092C67AF8900C45E3E /* RealmRoutineService.swift */; };
+		1257CE3B2D1DFF1700F159D9 /* RoutineDTO+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689A70B2C67B01600C45E3E /* RoutineDTO+Extension.swift */; };
+		1257CE3C2D1DFF1900F159D9 /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2082C5FC02800B71369 /* RoutineDTO.swift */; };
+		1257CE3E2D1DFFEB00F159D9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1257CE3D2D1DFFEB00F159D9 /* RealmSwift */; };
+		1257CE3F2D1DFFEB00F159D9 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1257CE3D2D1DFFEB00F159D9 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1257CE412D1E004E00F159D9 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */; };
+		1257CE422D1E007600F159D9 /* RoutineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9622C83471400D730E3 /* RoutineService.swift */; };
 		1262E9612C8342B200D730E3 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9602C8342B200D730E3 /* NotificationCenter.swift */; };
 		1262E9632C83471400D730E3 /* RoutineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9622C83471400D730E3 /* RoutineService.swift */; };
 		1262E9652C83475900D730E3 /* CreateRoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E9642C83475900D730E3 /* CreateRoutineViewModel.swift */; };
@@ -15,6 +22,20 @@
 		1262E96B2C83486600D730E3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262E96A2C83486600D730E3 /* HomeViewModel.swift */; };
 		1262E96D2C8359FE00D730E3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1262E96C2C8359FE00D730E3 /* Localizable.xcstrings */; };
 		1262E96F2C837B8400D730E3 /* oqloq-InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1262E96E2C837B8400D730E3 /* oqloq-InfoPlist.xcstrings */; };
+		126E59362D062576005BC718 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69567892C71FA6900826C9B /* WidgetKit.framework */; };
+		126E59372D062576005BC718 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E695678B2C71FA6900826C9B /* SwiftUI.framework */; };
+		126E593A2D062576005BC718 /* oqloqWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126E59392D062576005BC718 /* oqloqWidgetBundle.swift */; };
+		126E593C2D062576005BC718 /* oqloqWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126E593B2D062576005BC718 /* oqloqWidget.swift */; };
+		126E593E2D062577005BC718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126E593D2D062577005BC718 /* Assets.xcassets */; };
+		126E59422D062577005BC718 /* oqloqWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 126E59352D062576005BC718 /* oqloqWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1291C3E92D0DED6900139E8F /* OqloqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490232C45E7D000B545B9 /* OqloqView.swift */; };
+		1291C3EA2D0DEDB000139E8F /* PresentableRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4902D2C45E9F400B545B9 /* PresentableRoutine.swift */; };
+		1291C3EB2D0DEDF400139E8F /* ClockEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490292C45E92E00B545B9 /* ClockEngine.swift */; };
+		1291C3EC2D0DEDF800139E8F /* ClockEngineInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490272C45E8D300B545B9 /* ClockEngineInterface.swift */; };
+		1291C3ED2D0DEE0C00139E8F /* OqloqViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490252C45E8A300B545B9 /* OqloqViewModel.swift */; };
+		1291C3EE2D0DEE4300139E8F /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4902B2C45E98C00B545B9 /* RoutineView.swift */; };
+		1291C3EF2D0DEE5D00139E8F /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C490302C45EA3D00B545B9 /* Int+Extension.swift */; };
+		1291C3F02D0DEE8800139E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68577BF2C45308100A95283 /* Assets.xcassets */; };
 		12E2B2062C5FBFB900B71369 /* CreateRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */; };
 		12E2B2092C5FC02800B71369 /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B2082C5FC02800B71369 /* RoutineDTO.swift */; };
 		12E2B20B2C5FC0E300B71369 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */; };
@@ -42,6 +63,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		126E59402D062577005BC718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68577B02C45308000A95283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 126E59342D062576005BC718;
+			remoteInfo = oqloqWidgetExtension;
+		};
 		E68577C92C45308200A95283 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E68577B02C45308000A95283 /* Project object */;
@@ -59,6 +87,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1257CE402D1DFFEB00F159D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1257CE3F2D1DFFEB00F159D9 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E69567802C70F8E300826C9B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,6 +115,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				126E59422D062577005BC718 /* oqloqWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +131,13 @@
 		1262E96A2C83486600D730E3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1262E96C2C8359FE00D730E3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1262E96E2C837B8400D730E3 /* oqloq-InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "oqloq-InfoPlist.xcstrings"; sourceTree = "<group>"; };
+		126E59352D062576005BC718 /* oqloqWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = oqloqWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		126E59392D062576005BC718 /* oqloqWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oqloqWidgetBundle.swift; sourceTree = "<group>"; };
+		126E593B2D062576005BC718 /* oqloqWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oqloqWidget.swift; sourceTree = "<group>"; };
+		126E593D2D062577005BC718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		126E593F2D062577005BC718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		126E59462D062583005BC718 /* oqloqWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = oqloqWidgetExtension.entitlements; sourceTree = "<group>"; };
+		1291C3E62D0DDFED00139E8F /* oqloq.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = oqloq.entitlements; sourceTree = "<group>"; };
 		12E2B2052C5FBFB900B71369 /* CreateRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineView.swift; sourceTree = "<group>"; };
 		12E2B2082C5FC02800B71369 /* RoutineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		12E2B20A2C5FC0E300B71369 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -121,6 +168,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		126E59322D062576005BC718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1257CE3E2D1DFFEB00F159D9 /* RealmSwift in Frameworks */,
+				126E59372D062576005BC718 /* SwiftUI.framework in Frameworks */,
+				126E59362D062576005BC718 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E68577B52C45308000A95283 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +203,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126E59382D062576005BC718 /* oqloqWidget */ = {
+			isa = PBXGroup;
+			children = (
+				126E59392D062576005BC718 /* oqloqWidgetBundle.swift */,
+				126E593B2D062576005BC718 /* oqloqWidget.swift */,
+				126E593D2D062577005BC718 /* Assets.xcassets */,
+				126E593F2D062577005BC718 /* Info.plist */,
+			);
+			path = oqloqWidget;
+			sourceTree = "<group>";
+		};
 		12E2B2072C5FC01000B71369 /* Persistence Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,9 +243,11 @@
 		E68577AF2C45308000A95283 = {
 			isa = PBXGroup;
 			children = (
+				126E59462D062583005BC718 /* oqloqWidgetExtension.entitlements */,
 				E68577BA2C45308000A95283 /* oqloq */,
 				E68577CB2C45308200A95283 /* oqloqTests */,
 				E68577D52C45308200A95283 /* oqloqUITests */,
+				126E59382D062576005BC718 /* oqloqWidget */,
 				E68577B92C45308000A95283 /* Products */,
 				E695677C2C70F8E300826C9B /* Frameworks */,
 			);
@@ -189,6 +259,7 @@
 				E68577B82C45308000A95283 /* oqloq.app */,
 				E68577C82C45308200A95283 /* oqloqTests.xctest */,
 				E68577D22C45308200A95283 /* oqloqUITests.xctest */,
+				126E59352D062576005BC718 /* oqloqWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +267,7 @@
 		E68577BA2C45308000A95283 /* oqloq */ = {
 			isa = PBXGroup;
 			children = (
+				1291C3E62D0DDFED00139E8F /* oqloq.entitlements */,
 				E6221E762C6BFE9100A3ED91 /* Engine Module */,
 				12E2B2072C5FC01000B71369 /* Persistence Module */,
 				E6C4902F2C45EA2700B545B9 /* Extensions */,
@@ -342,6 +414,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		126E59342D062576005BC718 /* oqloqWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 126E59452D062577005BC718 /* Build configuration list for PBXNativeTarget "oqloqWidgetExtension" */;
+			buildPhases = (
+				126E59312D062576005BC718 /* Sources */,
+				126E59322D062576005BC718 /* Frameworks */,
+				126E59332D062576005BC718 /* Resources */,
+				1257CE402D1DFFEB00F159D9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oqloqWidgetExtension;
+			packageProductDependencies = (
+				1257CE3D2D1DFFEB00F159D9 /* RealmSwift */,
+			);
+			productName = oqloqWidgetExtension;
+			productReference = 126E59352D062576005BC718 /* oqloqWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E68577B72C45308000A95283 /* oqloq */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E68577DC2C45308200A95283 /* Build configuration list for PBXNativeTarget "oqloq" */;
@@ -355,6 +448,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				126E59412D062577005BC718 /* PBXTargetDependency */,
 			);
 			name = oqloq;
 			packageProductDependencies = (
@@ -410,6 +504,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					126E59342D062576005BC718 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					E68577B72C45308000A95283 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -456,11 +553,21 @@
 				E68577B72C45308000A95283 /* oqloq */,
 				E68577C72C45308200A95283 /* oqloqTests */,
 				E68577D12C45308200A95283 /* oqloqUITests */,
+				126E59342D062576005BC718 /* oqloqWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		126E59332D062576005BC718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1291C3F02D0DEE8800139E8F /* Assets.xcassets in Resources */,
+				126E593E2D062577005BC718 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E68577B62C45308000A95283 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -489,6 +596,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		126E59312D062576005BC718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1291C3EC2D0DEDF800139E8F /* ClockEngineInterface.swift in Sources */,
+				1291C3ED2D0DEE0C00139E8F /* OqloqViewModel.swift in Sources */,
+				1257CE3B2D1DFF1700F159D9 /* RoutineDTO+Extension.swift in Sources */,
+				1257CE3A2D1DFE8F00F159D9 /* RealmRoutineService.swift in Sources */,
+				1257CE3C2D1DFF1900F159D9 /* RoutineDTO.swift in Sources */,
+				1291C3EB2D0DEDF400139E8F /* ClockEngine.swift in Sources */,
+				1291C3EF2D0DEE5D00139E8F /* Int+Extension.swift in Sources */,
+				126E593C2D062576005BC718 /* oqloqWidget.swift in Sources */,
+				1291C3E92D0DED6900139E8F /* OqloqView.swift in Sources */,
+				1291C3EE2D0DEE4300139E8F /* RoutineView.swift in Sources */,
+				1257CE422D1E007600F159D9 /* RoutineService.swift in Sources */,
+				1291C3EA2D0DEDB000139E8F /* PresentableRoutine.swift in Sources */,
+				126E593A2D062576005BC718 /* oqloqWidgetBundle.swift in Sources */,
+				1257CE412D1E004E00F159D9 /* Color+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E68577B42C45308000A95283 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,6 +667,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		126E59412D062577005BC718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 126E59342D062576005BC718 /* oqloqWidgetExtension */;
+			targetProxy = 126E59402D062577005BC718 /* PBXContainerItemProxy */;
+		};
 		E68577CA2C45308200A95283 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E68577B72C45308000A95283 /* oqloq */;
@@ -552,6 +685,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		126E59432D062577005BC718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = oqloqWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPQ3VF2JBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = oqloqWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = oqloqWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mfsaglam.routineClock.oqloqWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		126E59442D062577005BC718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = oqloqWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPQ3VF2JBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = oqloqWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = oqloqWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mfsaglam.routineClock.oqloqWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E68577DA2C45308200A95283 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -677,6 +868,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = oqloq/oqloq.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"oqloq/Preview Content\"";
@@ -707,6 +899,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = oqloq/oqloq.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"oqloq/Preview Content\"";
@@ -810,6 +1003,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		126E59452D062577005BC718 /* Build configuration list for PBXNativeTarget "oqloqWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				126E59432D062577005BC718 /* Debug */,
+				126E59442D062577005BC718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E68577B32C45308000A95283 /* Build configuration list for PBXProject "oqloq" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -860,6 +1062,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1257CE3D2D1DFFEB00F159D9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E695677B2C70F7C500826C9B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		E695677D2C70F8E300826C9B /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E695677B2C70F7C500826C9B /* XCRemoteSwiftPackageReference "realm-swift" */;
