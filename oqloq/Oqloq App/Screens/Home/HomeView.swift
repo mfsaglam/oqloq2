@@ -10,12 +10,17 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var vm = HomeViewModel(interactor: RoutineStore.shared.appService)
 
+    @AppStorage(ThemeStore.storageKey, store: AppGroup.sharedDefaults)
+    private var storedThemeID: String = WallTheme.fallback.rawValue
+
     @State private var isSheetPresented = false
+
+    private var wall: WallTheme { WallTheme(rawValue: storedThemeID) ?? .fallback }
     
     var body: some View {
         NavigationView {
             ZStack {
-                Color.wallpaper
+                wall.color
                     .ignoresSafeArea()
                 
                 OqloqView(routines: vm.presentableRoutines)

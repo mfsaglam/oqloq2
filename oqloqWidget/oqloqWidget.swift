@@ -56,7 +56,7 @@ struct oqloqWidgetEntryView : View {
             Circle()
                 .stroke(lineWidth: 3)
                 .foregroundStyle(
-                    .solidBack.opacity(0.8)
+                    ClockMaterial.face.opacity(0.8)
                 )
                 .blur(radius: 1)
                 .frame(height: 310)
@@ -69,7 +69,7 @@ struct oqloqWidgetEntryView : View {
             ZStack {
                 // solid clock
                 Circle()
-                    .fill(.solidBack)
+                    .fill(ClockMaterial.face)
                     .frame(height: 260)
                     .rotationEffect(.degrees(-30))
                     .padding(.vertical)
@@ -89,7 +89,7 @@ struct oqloqWidgetEntryView : View {
                 // indicator
                 Circle()
                     .trim(from: 0.0, to: 0.002)
-                    .stroke(.primary, lineWidth: 40)
+                    .stroke(ClockMaterial.indicator, lineWidth: 40)
                     .frame(height: 220)
                     .rotationEffect(Angle(degrees: -90))
                     .rotationEffect(vm.angle)
@@ -106,7 +106,7 @@ struct oqloqWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
                 oqloqWidgetEntryView(entry: entry)
-                    .containerBackground(for: .widget) { Color.wallpaper }
+                    .containerBackground(for: .widget) { ThemeStore.load().color }
             } else {
                 oqloqWidgetEntryView(entry: entry)
                     .padding()

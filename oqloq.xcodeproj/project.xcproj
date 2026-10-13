@@ -150,7 +150,36 @@
                 "oqloqWidgetExtension/compile-sources",
               ],
             },
-            { "path": "NotificationCenter.swift", "target-membership": [ "oqloq/compile-sources" ] },
+            { "path": "LegacyNotificationCleanup.swift", "target-membership": [ "oqloq/compile-sources" ] },
+            {
+              "kind": "group",
+              "path": "Theme",
+              "children": [
+                {
+                  "path": "WallTheme.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                },
+                {
+                  "path": "ClockMaterial.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                },
+                {
+                  "path": "ThemeStore.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                },
+                { "path": "WallThemePicker.swift", "target-membership": [ "oqloq/compile-sources" ] },
+                { "path": "WallThemeGallery.swift", "target-membership": [ "oqloq/compile-sources" ] },
+              ],
+            },
             {
               "kind": "group",
               "path": "Model",
@@ -255,6 +284,7 @@
         { "path": "RoutineDTOTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
         { "path": "SwiftDataRoutineServiceTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
         { "path": "RealmToSwiftDataMigrationTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
+        { "path": "WallThemeTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
       ],
     }, {
       "kind": "group",

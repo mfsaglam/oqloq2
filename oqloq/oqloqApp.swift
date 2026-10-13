@@ -17,6 +17,7 @@ struct oqloqApp: App {
             print("[oqloq] Routine store unavailable, running in memory: \(failure)")
         }
         runLegacyMigration()
+        LegacyNotificationCleanup.runOnce()
     }
 
     var body: some Scene {

@@ -49,6 +49,5 @@ class EditRoutinesViewModel: ObservableObject {
     private func deleteRoutine(at index: IndexSet.Element) throws {
         let routine = routines[index]
         try interactor.deleteRoutine(routine)
-        NotificationCenter.shared.cancelScheduledNotification(with: routine.id.uuidString)
     }
 }

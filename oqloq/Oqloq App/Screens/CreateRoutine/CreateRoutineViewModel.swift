@@ -37,11 +37,6 @@ class CreateRoutineViewModel: ObservableObject {
     func saveRoutine() throws {
         if let routine = makeRoutineDTO() {
             try interactor.saveRoutine(routine: routine)
-            NotificationCenter.shared.scheduleDailyNotification(
-                at: Calendar.current.component(.hour, from: routine.startTime),
-                minute: Calendar.current.component(.minute, from: routine.startTime),
-                id: routine.id.uuidString
-            )
         }
     }
 }

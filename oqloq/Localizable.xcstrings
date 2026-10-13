@@ -964,6 +964,28 @@
         }
       }
     },
+    "editRoutines_routines" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Routines"
+          }
+        }
+      }
+    },
+    "editRoutines_wall" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wall"
+          }
+        }
+      }
+    },
     "home_edit" : {
       "localizations" : {
         "ar" : {
@@ -2970,6 +2992,97 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "oqloq"
+          }
+        }
+      }
+    },
+    "wallTheme_%@" : {
+
+    },
+    "wallTheme_blush" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blush"
+          }
+        }
+      }
+    },
+    "wallTheme_charcoal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Charcoal"
+          }
+        }
+      }
+    },
+    "wallTheme_clay" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clay"
+          }
+        }
+      }
+    },
+    "wallTheme_ivory" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ivory"
+          }
+        }
+      }
+    },
+    "wallTheme_mist" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mist"
+          }
+        }
+      }
+    },
+    "wallTheme_sage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sage"
+          }
+        }
+      }
+    },
+    "wallTheme_sand" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sand"
+          }
+        }
+      }
+    },
+    "wallTheme_stone" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stone"
           }
         }
       }

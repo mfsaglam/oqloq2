@@ -9,20 +9,26 @@ import SwiftUI
 
 struct EditRoutinesView: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var vm = EditRoutinesViewModel(interactor: RoutineStore.shared.appService)
+    @StateObject var vm = EditRoutinesViewModel(interactor: RoutineStore.shared.appService)
     @State private var showAlert = false
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(vm.routines) { routine in
-                    RoutineListView(
-                        startTime: routine.startTime.formattedTime(),
-                        endTime: routine.endTime.formattedTime(),
-                        color: .init(hex: routine.color)
-                    )
+                Section(header: Text("editRoutines_wall")) {
+                    WallThemePicker()
                 }
-                .onDelete(perform: deleteRoutine)
+
+                Section(header: Text("editRoutines_routines")) {
+                    ForEach(vm.routines) { routine in
+                        RoutineListView(
+                            startTime: routine.startTime.formattedTime(),
+                            endTime: routine.endTime.formattedTime(),
+                            color: .init(hex: routine.color)
+                        )
+                    }
+                    .onDelete(perform: deleteRoutine)
+                }
             }
             .onAppear {
                 vm.loadRoutines()

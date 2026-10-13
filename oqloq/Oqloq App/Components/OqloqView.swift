@@ -31,7 +31,7 @@ struct OqloqView: View {
         Circle()
             .stroke(lineWidth: routineWidth)
             .foregroundStyle(
-                .solidBack.opacity(0.8)
+                ClockMaterial.face.opacity(0.8)
             )
             .blur(radius: 1)
             .frame(height: screenwidth * 0.9)
@@ -47,7 +47,7 @@ struct OqloqView: View {
     private var clock: some View {
         ZStack {
             Circle()
-                .fill(.solidBack)
+                .fill(ClockMaterial.face)
                 .frame(height: screenwidth * 0.75)
                 .rotationEffect(.degrees(-30))
                 .padding(.vertical)
@@ -69,7 +69,7 @@ struct OqloqView: View {
     private var indicator: some View {
         Circle()
             .trim(from: 0.0, to: 0.002)
-            .stroke(.primary, lineWidth: screenwidth * 0.12)
+            .stroke(ClockMaterial.indicator, lineWidth: screenwidth * 0.12)
             .frame(height: screenwidth * 0.63)
             .rotationEffect(Angle(degrees: -90))
             .rotationEffect(vm.angle)
