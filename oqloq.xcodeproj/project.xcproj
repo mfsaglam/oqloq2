@@ -70,13 +70,45 @@
           "children": [
             {
               "kind": "group",
-              "path": "RealmPersistenceService",
+              "path": "SwiftDataPersistenceService",
               "children": [
                 {
-                  "path": "RealmRoutineService.swift",
+                  "path": "RoutineEntity.swift",
                   "target-membership": [
                     "oqloq/compile-sources",
                     "oqloqWidgetExtension/compile-sources",
+                  ],
+                },
+                {
+                  "path": "RoutineStore.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                },
+                {
+                  "path": "SwiftDataRoutineService.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                },
+              ],
+            },
+            {
+              "kind": "group",
+              "path": "Migration",
+              "children": [
+                {
+                  "path": "LegacyRealmStore.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                  ],
+                },
+                {
+                  "path": "RealmToSwiftDataMigration.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
                   ],
                 },
               ],
@@ -221,6 +253,8 @@
       "children": [
         { "path": "oqloqTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
         { "path": "RoutineDTOTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
+        { "path": "SwiftDataRoutineServiceTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
+        { "path": "RealmToSwiftDataMigrationTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
       ],
     }, {
       "kind": "group",
@@ -319,6 +353,13 @@
       },
     }, {
       "name": "oqloqTests",
+      "package-product-members": [
+        {
+          "package": "realm-swift",
+          "product-name": "RealmSwift",
+          "build-phase": { "build-phase": "frameworks" },
+        },
+      ],
       "id": "E68577C72C45308200A95283",
       "product": "Products/oqloqTests.xctest",
       "product-type": "bundle.unit-test",
@@ -388,13 +429,6 @@
           "kind": "copy",
           "name": "Embed Frameworks",
           "bundle-base-path": "frameworks-directory",
-        },
-      ],
-      "package-product-members": [
-        {
-          "package": "realm-swift",
-          "product-name": "RealmSwift",
-          "build-phase": { "build-phase": "frameworks" },
         },
       ],
       "build-settings": {
@@ -476,7 +510,7 @@
     "GCC_WARN_UNINITIALIZED_AUTOS": "YES_AGGRESSIVE",
     "GCC_WARN_UNUSED_FUNCTION": "YES",
     "GCC_WARN_UNUSED_VARIABLE": "YES",
-    "IPHONEOS_DEPLOYMENT_TARGET": "15.0",
+    "IPHONEOS_DEPLOYMENT_TARGET": "17.0",
     "LOCALIZATION_PREFERS_STRING_CATALOGS": "YES",
     "MTL_ENABLE_DEBUG_INFO[config=Debug]": "INCLUDE_SOURCE",
     "MTL_ENABLE_DEBUG_INFO[config=Release]": "NO",

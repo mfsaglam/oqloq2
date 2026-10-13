@@ -9,30 +9,31 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: TimelineProvider {
-    let service = RealmRoutineService()
+    let service = RoutineStore.shared.makeSnapshotService()
 
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), presentableRoutines: [])
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        do {
-            let presentableRoutines = try service.loadRoutines().map { $0.presentable }
-            let entry = SimpleEntry(date: Date(), presentableRoutines: presentableRoutines)
-            completion(entry)
-        } catch {
-            print("Failed to fetch routines from store.")
-        }
+        completion(SimpleEntry(date: Date(), presentableRoutines: loadRoutines()))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+        let entry = SimpleEntry(date: Date(), presentableRoutines: loadRoutines())
+        completion(Timeline(entries: [entry], policy: .atEnd))
+    }
+}
+
+extension Provider {
+    /// An unreadable store yields no routines rather than a never-completed
+    /// timeline request, which previously left the widget on its placeholder.
+    private func loadRoutines() -> [PresentableRoutine] {
         do {
-            let presentableRoutines = try service.loadRoutines().map { $0.presentable }
-            let entry = SimpleEntry(date: Date(), presentableRoutines: presentableRoutines)
-            let timeline = Timeline(entries: [entry], policy: .atEnd)
-            completion(timeline)
+            return try service.loadRoutines().map { $0.presentable }
         } catch {
-            print("Failed to fetch routines from store.")
+            print("[oqloq widget] Failed to fetch routines from store: \(error)")
+            return []
         }
     }
 }

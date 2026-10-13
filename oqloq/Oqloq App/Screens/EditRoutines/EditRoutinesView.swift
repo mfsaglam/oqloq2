@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditRoutinesView: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var vm = EditRoutinesViewModel(interactor: RealmRoutineService())
+    @ObservedObject var vm = EditRoutinesViewModel(interactor: RoutineStore.shared.appService)
     @State private var showAlert = false
     
     var body: some View {

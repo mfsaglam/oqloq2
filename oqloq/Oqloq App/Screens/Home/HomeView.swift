@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var vm = HomeViewModel(interactor: RealmRoutineService())
+    @StateObject var vm = HomeViewModel(interactor: RoutineStore.shared.appService)
 
     @State private var isSheetPresented = false
     
@@ -50,9 +50,9 @@ struct HomeView: View {
         .onAppear {
             vm.getData()
         }
-        .onChange(of: isSheetPresented, perform: { value in
+        .onChange(of: isSheetPresented) {
             vm.getData()
-        })
+        }
     }
 }
 
