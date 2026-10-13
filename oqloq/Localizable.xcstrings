@@ -12,6 +12,17 @@
         }
       }
     },
+    "common_ok": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
     "createRoutine_color": {
       "extractionState": "manual",
       "localizations": {
@@ -198,6 +209,50 @@
           "stringUnit": {
             "state": "translated",
             "value": "結束時間"
+          }
+        }
+      }
+    },
+    "createRoutine_error_color": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That colour could not be saved. Please pick another one."
+          }
+        }
+      }
+    },
+    "createRoutine_error_noDuration": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start and end are the same time, so this routine has no duration."
+          }
+        }
+      }
+    },
+    "createRoutine_error_saveFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The routine could not be saved."
+          }
+        }
+      }
+    },
+    "createRoutine_error_title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not save"
           }
         }
       }

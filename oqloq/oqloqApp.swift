@@ -21,7 +21,7 @@ struct oqloqApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationView {
+            NavigationStack {
                 HomeView()
             }
         }

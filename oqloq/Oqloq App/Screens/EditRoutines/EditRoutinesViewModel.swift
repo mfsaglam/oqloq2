@@ -21,7 +21,7 @@ class EditRoutinesViewModel: ObservableObject {
             let data = try interactor.loadRoutines()
             routines = data
         } catch {
-            print(error)
+            print("[oqloq] Could not load routines: \(error)")
         }
     }
     
@@ -32,7 +32,7 @@ class EditRoutinesViewModel: ObservableObject {
             }
             routines.remove(atOffsets: indexSet)
         } catch {
-            print(error)
+            print("[oqloq] Could not delete routine: \(error)")
         }
     }
     
@@ -41,8 +41,11 @@ class EditRoutinesViewModel: ObservableObject {
             try routines.indices.forEach { index in
                 try deleteRoutine(at: index)
             }
+            // The published list was left holding the deleted routines, which
+            // only went unnoticed because the screen dismisses afterwards.
+            routines.removeAll()
         } catch {
-            print(error)
+            print("[oqloq] Could not delete every routine: \(error)")
         }
     }
     

@@ -38,7 +38,7 @@ enum WallTheme: String, CaseIterable, Identifiable {
         }
     }
 
-    var color: Color { Color(hex: hex) }
+    var color: Color { Color(hex: hex) ?? .unreadable }
 
     /// Key into `Localizable.xcstrings`.
     var nameKey: LocalizedStringKey { LocalizedStringKey("wallTheme_\(rawValue)") }

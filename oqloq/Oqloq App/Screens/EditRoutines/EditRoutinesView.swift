@@ -24,7 +24,7 @@ struct EditRoutinesView: View {
                         RoutineListView(
                             startTime: routine.startTime.formattedTime(),
                             endTime: routine.endTime.formattedTime(),
-                            color: .init(hex: routine.color)
+                            color: Color(hex: routine.color) ?? .unreadable
                         )
                     }
                     .onDelete(perform: deleteRoutine)

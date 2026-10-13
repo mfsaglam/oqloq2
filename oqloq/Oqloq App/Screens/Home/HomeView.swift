@@ -18,14 +18,15 @@ struct HomeView: View {
     private var wall: WallTheme { WallTheme(rawValue: storedThemeID) ?? .fallback }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                wall.color
-                    .ignoresSafeArea()
-                
-                OqloqView(routines: vm.presentableRoutines)
-                    .padding(.bottom, 100)
-            }
+        // No NavigationView of its own: the app already provides one, and
+        // nesting them put an empty navigation bar over the real one, which
+        // swallowed every tap on Edit and the add button.
+        ZStack {
+            wall.color
+                .ignoresSafeArea()
+
+            OqloqView(routines: vm.presentableRoutines)
+                .padding(.bottom, 100)
         }
         .navigationTitle("oqloq")
         .navigationBarTitleDisplayMode(.inline)
@@ -61,7 +62,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
 }

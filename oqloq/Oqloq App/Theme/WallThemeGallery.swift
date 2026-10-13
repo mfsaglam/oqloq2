@@ -17,10 +17,10 @@ struct WallThemeSample: View {
     /// A plausible day, including a routine that spans midnight, so arcs are
     /// exercised the same way in every theme.
     static let sampleRoutines: [PresentableRoutine] = [
-        .init(start: 23.0 / 24, end: 7.0 / 24, color: Color(hex: "#7E8AA2")),
-        .init(start: 9.0 / 24, end: 12.0 / 24, color: Color(hex: "#C25B4E")),
-        .init(start: 13.0 / 24, end: 15.5 / 24, color: Color(hex: "#D8A24A")),
-        .init(start: 19.0 / 24, end: 21.0 / 24, color: Color(hex: "#5E8B6A")),
+        .init(start: 23.0 / 24, end: 7.0 / 24, color: Color(hex: "#7E8AA2") ?? .unreadable),
+        .init(start: 9.0 / 24, end: 12.0 / 24, color: Color(hex: "#C25B4E") ?? .unreadable),
+        .init(start: 13.0 / 24, end: 15.5 / 24, color: Color(hex: "#D8A24A") ?? .unreadable),
+        .init(start: 19.0 / 24, end: 21.0 / 24, color: Color(hex: "#5E8B6A") ?? .unreadable),
     ]
 
     var body: some View {

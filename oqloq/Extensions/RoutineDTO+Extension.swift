@@ -5,7 +5,7 @@
 //  Created by Saglam, Fatih on 10.08.2024.
 //
 
-import Foundation
+import SwiftUI
 
 extension RoutineDTO {
     var presentable: PresentableRoutine {
@@ -18,6 +18,6 @@ extension RoutineDTO {
         let start = (startHour + startMinute / 60.0) / 24.0
         let end = (endHour + endMinute / 60.0) / 24.0
         
-        return PresentableRoutine(id: id, start: start, end: end, color: .init(hex: color))
+        return PresentableRoutine(id: id, start: start, end: end, color: Color(hex: color) ?? .unreadable)
     }
 }

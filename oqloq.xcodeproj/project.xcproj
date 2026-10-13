@@ -299,6 +299,7 @@
         { "path": "SwiftDataRoutineServiceTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
         { "path": "WallThemeTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
         { "path": "ClockSnapshotTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
+        { "path": "RoutineArcsTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
       ],
     }, {
       "kind": "group",

@@ -20,14 +20,15 @@ struct RoutineView: View {
     var light: LightSource = .default
 
     var body: some View {
-        if routine.start < routine.end {
-            arc(from: routine.start, to: routine.end)
-        } else {
-            // Spans midnight, so it is drawn as two arcs: up to the end of the
-            // day, and from the start of the next.
+        switch routine.arcs {
+        case .empty:
+            EmptyView()
+        case let .single(from, to):
+            arc(from: from, to: to)
+        case let .split(from, to, thenTo):
             ZStack {
-                arc(from: routine.start, to: 0.9999)
-                arc(from: 0, to: routine.end)
+                arc(from: from, to: to)
+                arc(from: 0, to: thenTo)
             }
         }
     }

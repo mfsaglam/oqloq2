@@ -133,6 +133,7 @@ final class ClockSnapshotTests: XCTestCase {
         }
         return differing
     }
+
 }
 
 /// Mirrors `HomeView`'s composition, with the indicator frozen so successive
