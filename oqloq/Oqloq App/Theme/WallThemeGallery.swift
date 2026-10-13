@@ -7,20 +7,6 @@
 
 import SwiftUI
 
-/// A clock engine frozen at one time of day, so previews of different themes
-/// are directly comparable instead of each rendering at "now".
-struct FixedAngleClockEngine: ClockEngineInterface {
-    let hour: Int
-    let minute: Int
-
-    func currentAngle() -> Angle {
-        (hour * 60 + minute).angle()
-    }
-
-    /// Previews never advance; nothing to schedule.
-    func updateAnglePeriodically(completion: @escaping () -> Void) {}
-}
-
 /// One wall, with the clock drawn on it at a fixed time.
 struct WallThemeSample: View {
     let theme: WallTheme
@@ -41,7 +27,7 @@ struct WallThemeSample: View {
         ZStack {
             theme.color
             OqloqView(
-                vm: OqloqViewModel(engine: FixedAngleClockEngine(hour: hour, minute: minute)),
+                vm: OqloqViewModel(engine: StaticClockEngine(hour: hour, minute: minute)),
                 routines: routines
             )
             .padding(28)

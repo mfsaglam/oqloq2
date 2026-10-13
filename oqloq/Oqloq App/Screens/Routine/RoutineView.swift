@@ -7,40 +7,40 @@
 
 import SwiftUI
 
+/// One routine drawn as an arc of the 24 hour ring.
+///
+/// `diameter` and `lineWidth` come from the clock that owns this view, so the
+/// arcs always sit exactly on its ring. They used to be derived from the
+/// screen width independently, which left the widget's arcs on a different
+/// circle from the widget's own ring.
 struct RoutineView: View {
     let routine: PresentableRoutine
-    private let screenWidth = UIScreen.main.bounds.width
-    private let routineWidth = UIScreen.main.bounds.width * 0.0102
-    
+    let diameter: CGFloat
+    let lineWidth: CGFloat
+
     var body: some View {
         if routine.start < routine.end {
-            Circle()
-                .trim(from: CGFloat(routine.start), to: CGFloat(routine.end))
-                .stroke(lineWidth: routineWidth)
-                .foregroundStyle(routine.color)
-                .frame(height: screenWidth * 0.9)
-                .rotationEffect(Angle(degrees: -90))
+            arc(from: routine.start, to: routine.end)
         } else {
+            // Spans midnight, so it is drawn as two arcs: up to the end of the
+            // day, and from the start of the next.
             ZStack {
-                Circle()
-                    .trim(from: routine.start, to: 0.9999)
-                    .stroke(lineWidth: routineWidth)
-                    .foregroundStyle(routine.color)
-                    .frame(height: screenWidth * 0.9)
-                    .rotationEffect(Angle(degrees: -90))
-                
-                Circle()
-                    .trim(from: 0, to: routine.end)
-                    .stroke(lineWidth: routineWidth)
-                    .foregroundStyle(routine.color)
-                    .frame(height: screenWidth * 0.9)
-                    .rotationEffect(Angle(degrees: -90))
-                
+                arc(from: routine.start, to: 0.9999)
+                arc(from: 0, to: routine.end)
             }
         }
+    }
+
+    private func arc(from start: CGFloat, to end: CGFloat) -> some View {
+        Circle()
+            .trim(from: start, to: end)
+            .stroke(lineWidth: lineWidth)
+            .foregroundStyle(routine.color)
+            .frame(width: diameter, height: diameter)
+            .rotationEffect(Angle(degrees: -90))
     }
 }
 
 #Preview {
-    RoutineView(routine: .init(start: 0.95, end: 0.3, color: .red))
+    RoutineView(routine: .init(start: 0.95, end: 0.3, color: .red), diameter: 300, lineWidth: 4)
 }

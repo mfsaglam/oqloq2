@@ -45,57 +45,13 @@ struct SimpleEntry: TimelineEntry {
 
 struct oqloqWidgetEntryView : View {
     var entry: Provider.Entry
-    
-    @StateObject var vm = OqloqViewModel(
-        engine: ClockEngine()
-    )
 
     var body: some View {
-        ZStack {
-            // routines
-            Circle()
-                .stroke(lineWidth: 3)
-                .foregroundStyle(
-                    ClockMaterial.face.opacity(0.8)
-                )
-                .blur(radius: 1)
-                .frame(height: 310)
-            
-            ForEach(entry.presentableRoutines) { routine in
-                RoutineView(routine: routine)
-            }
-            
-            // oqloq
-            ZStack {
-                // solid clock
-                Circle()
-                    .fill(ClockMaterial.face)
-                    .frame(height: 260)
-                    .rotationEffect(.degrees(-30))
-                    .padding(.vertical)
-                
-                Circle()
-                    .fill(
-                        LinearGradient(
-                            colors: [.white.opacity(0.05), .black.opacity(0.2)],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    )
-                    .frame(height: 260)
-                    .rotationEffect(.degrees(-30))
-                    .padding(.vertical)
-                
-                // indicator
-                Circle()
-                    .trim(from: 0.0, to: 0.002)
-                    .stroke(ClockMaterial.indicator, lineWidth: 40)
-                    .frame(height: 220)
-                    .rotationEffect(Angle(degrees: -90))
-                    .rotationEffect(vm.angle)
-            }
-        }
-        .shadow(color: .black.opacity(0.3), radius: 30, x: 30, y: 30)
+        WidgetClockView(
+            routines: entry.presentableRoutines,
+            angle: StaticClockEngine(date: entry.date).currentAngle()
+        )
+        .padding(4)
     }
 }
 

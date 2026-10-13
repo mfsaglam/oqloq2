@@ -51,6 +51,12 @@
                     "oqloq/compile-sources",
                     "oqloqWidgetExtension/compile-sources",
                   ],
+                }, {
+                  "path": "StaticClockEngine.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
                 },
               ],
             },
@@ -149,6 +155,13 @@
                     "oqloqWidgetExtension/compile-sources",
                   ],
                 },
+                {
+                  "path": "LightSource.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                },
                 { "path": "WallThemePicker.swift", "target-membership": [ "oqloq/compile-sources" ] },
                 { "path": "WallThemeGallery.swift", "target-membership": [ "oqloq/compile-sources" ] },
               ],
@@ -173,13 +186,23 @@
                   "path": "OqloqViewModel.swift",
                   "target-membership": [
                     "oqloq/compile-sources",
+                  ],
+                }, {
+                  "path": "ClockFace.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                }, {
+                  "path": "ClockGeometry.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
                     "oqloqWidgetExtension/compile-sources",
                   ],
                 }, {
                   "path": "OqloqView.swift",
                   "target-membership": [
                     "oqloq/compile-sources",
-                    "oqloqWidgetExtension/compile-sources",
                   ],
                 },
               ],
@@ -257,6 +280,7 @@
         { "path": "RoutineDTOTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
         { "path": "SwiftDataRoutineServiceTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
         { "path": "WallThemeTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
+        { "path": "ClockSnapshotTests.swift", "target-membership": [ "oqloqTests/compile-sources" ] },
       ],
     }, {
       "kind": "group",
@@ -271,6 +295,7 @@
       "children": [
         { "path": "oqloqWidgetBundle.swift", "target-membership": [ "oqloqWidgetExtension/compile-sources" ] },
         { "path": "oqloqWidget.swift", "target-membership": [ "oqloqWidgetExtension/compile-sources" ] },
+        { "path": "WidgetClockView.swift", "target-membership": [ "oqloqWidgetExtension/compile-sources" ] },
         { "path": "Assets.xcassets", "target-membership": [ "oqloqWidgetExtension/resources" ] },
         { "path": "Info.plist" },
       ],

@@ -24,7 +24,6 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 OqloqView(routines: vm.presentableRoutines)
-                    .padding()
                     .padding(.bottom, 100)
             }
         }
