@@ -39,16 +39,47 @@ enum ClockMaterial {
     /// Slight darkening towards the rim, suggesting a disc with thickness.
     static let faceRimShade = Color.black.opacity(0.05)
 
-    /// The shadow the clock throws on the wall. Fairly dark and only lightly
-    /// blurred, so it reads as a cast shadow with a direction rather than a
-    /// soft glow.
+    // MARK: Relief
+    //
+    // The scene is layered: the wall is the ground, the disc stands off it,
+    // and the routine ring stands off a little further still. Heights are
+    // multiples of the disc's, and they scale a layer's shadow, so a higher
+    // layer throws a longer, softer one. Because the ring is above the disc,
+    // its shadow falls across the disc's rim.
+
+    static let faceHeight: CGFloat = 1.0
+    static let ringHeight: CGFloat = 1.5
+
+    /// The shadow a layer throws on whatever is under it. Fairly dark and
+    /// only lightly blurred, so it reads as a cast shadow with a direction
+    /// rather than a soft glow.
     static let castShadow = Color.black.opacity(0.30)
     static let castShadowRadius: CGFloat = 0.022
     static let castShadowSpread: CGFloat = 0.050
 
-    /// Broad, weak occlusion around the body. Carries no direction of its
-    /// own; it only seats the object against the wall.
+    /// Broad, weak occlusion. Carries no direction of its own; it only seats
+    /// a layer against what is behind it.
     static let ambientShadow = Color.black.opacity(0.13)
     static let ambientShadowRadius: CGFloat = 0.075
     static let ambientShadowSpread: CGFloat = 0.012
+
+    // MARK: Tube
+
+    /// The ring is a length of plastic tube: round in cross section, so it
+    /// carries a specular band on the side facing the light and a dark band
+    /// opposite. These are fractions of the tube's own width.
+
+    /// Specular band, towards the tube's outer edge.
+    static let tubeHighlightInset: CGFloat = 0.46
+    static let tubeHighlightWidth: CGFloat = 0.30
+    /// Shaded band, towards the inner edge.
+    static let tubeShadeInset: CGFloat = 0.52
+    static let tubeShadeWidth: CGFloat = 0.36
+
+    /// Strength of the specular band where the light hits it, and where it
+    /// faces away.
+    static let tubeHighlightLit = Color.white.opacity(0.52)
+    static let tubeHighlightUnlit = Color.white.opacity(0.10)
+    static let tubeShadeLit = Color.black.opacity(0.06)
+    static let tubeShadeUnlit = Color.black.opacity(0.24)
 }

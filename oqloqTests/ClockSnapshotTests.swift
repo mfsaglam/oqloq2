@@ -24,17 +24,10 @@ final class ClockSnapshotTests: XCTestCase {
         let size = UIScreen.main.bounds.size
 
         for theme in themes {
-            let view = SnapshotHome(theme: theme).frame(width: size.width, height: size.height)
-            let renderer = ImageRenderer(content: view)
-            renderer.scale = 2
-
-            let image = try XCTUnwrap(renderer.uiImage, "could not render \(theme.rawValue)")
-            let data = try XCTUnwrap(image.pngData(), "could not encode \(theme.rawValue)")
-
-            let attachment = XCTAttachment(data: data, uniformTypeIdentifier: "public.png")
-            attachment.name = "\(theme.rawValue).png"
-            attachment.lifetime = .keepAlways
-            add(attachment)
+            try autoreleasepool {
+                let view = SnapshotHome(theme: theme).frame(width: size.width, height: size.height)
+                attach(try png(of: view, name: theme.rawValue), name: theme.rawValue)
+            }
         }
     }
 
@@ -51,19 +44,94 @@ final class ClockSnapshotTests: XCTestCase {
         let size = UIScreen.main.bounds.size
 
         for (name, light) in positions {
-            let view = SnapshotHome(theme: .sage, light: light)
-                .frame(width: size.width, height: size.height)
-            let renderer = ImageRenderer(content: view)
-            renderer.scale = 2
-
-            let image = try XCTUnwrap(renderer.uiImage, "could not render \(name)")
-            let data = try XCTUnwrap(image.pngData(), "could not encode \(name)")
-
-            let attachment = XCTAttachment(data: data, uniformTypeIdentifier: "public.png")
-            attachment.name = "\(name).png"
-            attachment.lifetime = .keepAlways
-            add(attachment)
+            try autoreleasepool {
+                let view = SnapshotHome(theme: .sage, light: light)
+                    .frame(width: size.width, height: size.height)
+                attach(try png(of: view, name: name), name: name)
+            }
         }
+    }
+
+    /// The widget and the app must draw the same object. They are separate
+    /// views, so this renders both at the same size with the same inputs and
+    /// requires the pixels to match; anything that drifts shows up here
+    /// rather than on someone's home screen.
+    func test_widgetAndAppClocksRenderIdentically() throws {
+        let side: CGFloat = 360
+        let angle = StaticClockEngine(hour: 10, minute: 10).currentAngle()
+        let routines = WallThemeSample.sampleRoutines
+
+        let appClock = OqloqView(
+            vm: OqloqViewModel(engine: StaticClockEngine(hour: 10, minute: 10)),
+            routines: routines
+        ).frame(width: side, height: side)
+
+        let widgetClock = WidgetClockView(routines: routines, angle: angle)
+            .frame(width: side, height: side)
+
+        let app = try render(appClock, name: "parity-app")
+        let widget = try render(widgetClock, name: "parity-widget")
+
+        let differing = try Self.differingPixels(app, widget)
+        XCTAssertEqual(differing, 0, "widget and app clocks differ in \(differing) pixels")
+    }
+
+    private func render(_ view: some View, name: String) throws -> CGImage {
+        let image = try image(of: view, name: name)
+        attach(try encode(image, name: name), name: name)
+        return try XCTUnwrap(image.cgImage)
+    }
+
+    private func image(of view: some View, name: String) throws -> UIImage {
+        let renderer = ImageRenderer(content: view)
+        renderer.scale = 2
+        return try XCTUnwrap(renderer.uiImage, "could not render \(name)")
+    }
+
+    private func png(of view: some View, name: String) throws -> Data {
+        try encode(try image(of: view, name: name), name: name)
+    }
+
+    /// PNG encoding of a full screen render can fail transiently when several
+    /// have been held at once, so a failure is retried after draining.
+    private func encode(_ image: UIImage, name: String) throws -> Data {
+        if let data = autoreleasepool(invoking: { image.pngData() }) { return data }
+        return try XCTUnwrap(
+            autoreleasepool(invoking: { image.pngData() }),
+            "could not encode \(name)"
+        )
+    }
+
+    private func attach(_ data: Data, name: String) {
+        let attachment = XCTAttachment(data: data, uniformTypeIdentifier: "public.png")
+        attachment.name = "\(name).png"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
+
+    /// Number of pixels whose colour differs by more than a rounding step.
+    private static func differingPixels(_ a: CGImage, _ b: CGImage) throws -> Int {
+        guard a.width == b.width, a.height == b.height else { return .max }
+        func bytes(_ image: CGImage) throws -> [UInt8] {
+            var buffer = [UInt8](repeating: 0, count: image.width * image.height * 4)
+            let context = try XCTUnwrap(CGContext(
+                data: &buffer, width: image.width, height: image.height,
+                bitsPerComponent: 8, bytesPerRow: image.width * 4,
+                space: CGColorSpaceCreateDeviceRGB(),
+                bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+            ))
+            context.draw(image, in: CGRect(x: 0, y: 0, width: image.width, height: image.height))
+            return buffer
+        }
+        let left = try bytes(a), right = try bytes(b)
+        var differing = 0
+        for index in stride(from: 0, to: left.count, by: 4) where
+            abs(Int(left[index]) - Int(right[index])) > 1
+            || abs(Int(left[index + 1]) - Int(right[index + 1])) > 1
+            || abs(Int(left[index + 2]) - Int(right[index + 2])) > 1 {
+            differing += 1
+        }
+        return differing
     }
 }
 

@@ -188,6 +188,24 @@
                     "oqloq/compile-sources",
                   ],
                 }, {
+                  "path": "WidgetClockView.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                }, {
+                  "path": "ClockDial.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                }, {
+                  "path": "TubeArc.swift",
+                  "target-membership": [
+                    "oqloq/compile-sources",
+                    "oqloqWidgetExtension/compile-sources",
+                  ],
+                }, {
                   "path": "ClockFace.swift",
                   "target-membership": [
                     "oqloq/compile-sources",
@@ -295,7 +313,6 @@
       "children": [
         { "path": "oqloqWidgetBundle.swift", "target-membership": [ "oqloqWidgetExtension/compile-sources" ] },
         { "path": "oqloqWidget.swift", "target-membership": [ "oqloqWidgetExtension/compile-sources" ] },
-        { "path": "WidgetClockView.swift", "target-membership": [ "oqloqWidgetExtension/compile-sources" ] },
         { "path": "Assets.xcassets", "target-membership": [ "oqloqWidgetExtension/resources" ] },
         { "path": "Info.plist" },
       ],

@@ -17,6 +17,7 @@ struct RoutineView: View {
     let routine: PresentableRoutine
     let diameter: CGFloat
     let lineWidth: CGFloat
+    var light: LightSource = .default
 
     var body: some View {
         if routine.start < routine.end {
@@ -32,12 +33,14 @@ struct RoutineView: View {
     }
 
     private func arc(from start: CGFloat, to end: CGFloat) -> some View {
-        Circle()
-            .trim(from: start, to: end)
-            .stroke(lineWidth: lineWidth)
-            .foregroundStyle(routine.color)
-            .frame(width: diameter, height: diameter)
-            .rotationEffect(Angle(degrees: -90))
+        TubeArc(
+            start: start,
+            end: end,
+            diameter: diameter,
+            lineWidth: lineWidth,
+            color: routine.color,
+            light: light
+        )
     }
 }
 
