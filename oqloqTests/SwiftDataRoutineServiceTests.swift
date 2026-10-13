@@ -42,8 +42,8 @@ final class SwiftDataRoutineServiceTests: XCTestCase {
         XCTAssertTrue(try service.loadRoutines().isEmpty)
     }
 
-    /// The Realm implementation returned an unspecified order, which made the
-    /// arc draw order and the create-form prefill vary between launches.
+    /// The arc draw order and the create-form prefill both depend on this
+    /// being stable.
     func test_routinesAreOrderedByStartTime() throws {
         let (service, _) = try makeService()
         try service.saveRoutine(routine: routine(hour: 21))

@@ -8,9 +8,8 @@ import SwiftData
 
 /// SwiftData backed `RoutineService`.
 ///
-/// Unlike the Realm implementation it replaced, every failure is thrown
-/// rather than trapped, so callers can report a failed save instead of
-/// crashing or silently losing the routine.
+/// Every failure is thrown rather than trapped, so callers can report a
+/// failed save instead of crashing or silently losing the routine.
 final class SwiftDataRoutineService: RoutineService {
     private let context: ModelContext
 
@@ -30,10 +29,9 @@ final class SwiftDataRoutineService: RoutineService {
         try context.save()
     }
 
-    /// Sorted by start time so ordering is deterministic. The Realm
-    /// implementation returned an unspecified order, which made both the
+    /// Sorted by start time so ordering is deterministic, which both the
     /// drawing order of overlapping arcs and `CreateRoutineViewModel`'s
-    /// "continue from the last routine" prefill vary between launches.
+    /// "continue from the last routine" prefill depend on.
     func loadRoutines() throws -> [RoutineDTO] {
         let descriptor = FetchDescriptor<RoutineEntity>(
             sortBy: [SortDescriptor(\.startTime)]

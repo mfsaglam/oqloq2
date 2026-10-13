@@ -8,14 +8,13 @@ import SwiftData
 
 /// SwiftData representation of a routine.
 ///
-/// Mirrors the field names and semantics of the legacy Realm `RoutineModel`
-/// exactly, so the clock maths in `RoutineDTO.presentable` is unaffected by
-/// the storage change. Only the start and end *time of day* is meaningful;
-/// the date component is ignored when drawing, because one day repeats.
+/// Only the start and end *time of day* is meaningful; the date component is
+/// ignored when drawing, because the same day repeats.
 @Model
 final class RoutineEntity {
-    /// Stable identity, independent of `color`. Kept unique so re-running the
-    /// Realm migration upserts rather than duplicating.
+    /// Stable identity, independent of `color`: the same colour may be reused
+    /// across blocks, so identity can never be derived from it. Unique so a
+    /// repeated insert of the same routine cannot duplicate it.
     @Attribute(.unique) var id: UUID
     var startTime: Date
     var endTime: Date
